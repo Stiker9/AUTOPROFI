@@ -12,10 +12,8 @@
     "electricsIncluded": false,
     "price": 6490,
     "inStock": true,
-    "image": "/images/products/lider-vesta.jpg",
-    "fitsCars": [
-      "lada-vesta"
-    ],
+    "image": "/images/products/2108-D2.jpg",
+    "fitsCars": ["lada-vesta"],
     "universal": false
   },
   {
@@ -31,10 +29,8 @@
     "electricsIncluded": false,
     "price": 7900,
     "inStock": true,
-    "image": "/images/products/ptgroup-vesta.jpg",
-    "fitsCars": [
-      "lada-vesta"
-    ],
+    "image": "/images/products/2133-A.jpg",
+    "fitsCars": ["lada-vesta"],
     "universal": false
   },
   {
@@ -50,10 +46,8 @@
     "electricsIncluded": false,
     "price": 7300,
     "inStock": true,
-    "image": "/images/products/berg-niva.jpg",
-    "fitsCars": [
-      "lada-niva-legend"
-    ],
+    "image": "/images/products/2151-A.jpg",
+    "fitsCars": ["lada-niva-legend"],
     "universal": false
   },
   {
@@ -69,10 +63,8 @@
     "electricsIncluded": false,
     "price": 7800,
     "inStock": true,
-    "image": "/images/products/motodor-niva.jpg",
-    "fitsCars": [
-      "lada-niva-legend"
-    ],
+    "image": "/images/products/2158-D2.jpg",
+    "fitsCars": ["lada-niva-legend"],
     "universal": false
   },
   {
@@ -88,10 +80,8 @@
     "electricsIncluded": false,
     "price": 5400,
     "inStock": true,
-    "image": "/images/products/avtos-granta.jpg",
-    "fitsCars": [
-      "lada-granta"
-    ],
+    "image": "/images/products/2159-A.jpg",
+    "fitsCars": ["lada-granta"],
     "universal": false
   },
   {
@@ -107,10 +97,8 @@
     "electricsIncluded": false,
     "price": 17900,
     "inStock": true,
-    "image": "/images/products/bosal-rav4-40.jpg",
-    "fitsCars": [
-      "toyota-rav4-xa40"
-    ],
+    "image": "/images/products/2181-A.jpg",
+    "fitsCars": ["toyota-rav4-xa40"],
     "universal": false
   },
   {
@@ -126,10 +114,8 @@
     "electricsIncluded": false,
     "price": 24200,
     "inStock": true,
-    "image": "/images/products/galia-rav4-50.jpg",
-    "fitsCars": [
-      "toyota-rav4-xa50"
-    ],
+    "image": "/images/products/2852-А ТСУ в сборе.jpg",
+    "fitsCars": ["toyota-rav4-xa50"],
     "universal": false
   },
   {
@@ -145,10 +131,8 @@
     "electricsIncluded": false,
     "price": 12300,
     "inStock": true,
-    "image": "/images/products/ptgroup-rav4-50.jpg",
-    "fitsCars": [
-      "toyota-rav4-xa50"
-    ],
+    "image": "/images/products/2856-А ТСУ в сборе.jpg",
+    "fitsCars": ["toyota-rav4-xa50"],
     "universal": false
   },
   {
@@ -164,10 +148,8 @@
     "electricsIncluded": false,
     "price": 21800,
     "inStock": true,
-    "image": "/images/products/tcc-prado.jpg",
-    "fitsCars": [
-      "toyota-lc-prado-150"
-    ],
+    "image": "/images/products/3004-D2.jpg",
+    "fitsCars": ["toyota-lc-prado-150"],
     "universal": false
   },
   {
@@ -183,10 +165,8 @@
     "electricsIncluded": false,
     "price": 19400,
     "inStock": true,
-    "image": "/images/products/berg-prado.jpg",
-    "fitsCars": [
-      "toyota-lc-prado-150"
-    ],
+    "image": "/images/products/3006-A.jpg",
+    "fitsCars": ["toyota-lc-prado-150"],
     "universal": false
   },
   {
@@ -202,10 +182,8 @@
     "electricsIncluded": false,
     "price": 8700,
     "inStock": true,
-    "image": "/images/products/lider-camry.jpg",
-    "fitsCars": [
-      "toyota-camry-xv70"
-    ],
+    "image": "/images/products/3006-D2.jpg",
+    "fitsCars": ["toyota-camry-xv70"],
     "universal": false
   },
   {
@@ -221,10 +199,8 @@
     "electricsIncluded": false,
     "price": 16900,
     "inStock": true,
-    "image": "/images/products/bosal-sportage-ql.jpg",
-    "fitsCars": [
-      "kia-sportage-ql"
-    ],
+    "image": "/images/products/3097-A_tsu_v_sbore.jpg",
+    "fitsCars": ["kia-sportage-ql"],
     "universal": false
   },
   {
@@ -240,11 +216,8 @@
     "electricsIncluded": false,
     "price": 13200,
     "inStock": true,
-    "image": "/images/products/ptgroup-sportage5.jpg",
-    "fitsCars": [
-      "kia-sportage-nq5",
-      "hyundai-tucson-nx4"
-    ],
+    "image": "/images/products/3099-A.jpg",
+    "fitsCars": ["kia-sportage-nq5", "hyundai-tucson-nx4"],
     "universal": false
   },
   {
@@ -260,11 +233,8 @@
     "electricsIncluded": false,
     "price": 6990,
     "inStock": true,
-    "image": "/images/products/lider-rio4.jpg",
-    "fitsCars": [
-      "kia-rio-4",
-      "hyundai-solaris-2"
-    ],
+    "image": "/images/products/3550-A_tsu_v_sbore.jpg",
+    "fitsCars": ["kia-rio-4", "hyundai-solaris-2"],
     "universal": false
   },
   {
@@ -280,10 +250,8 @@
     "electricsIncluded": false,
     "price": 19800,
     "inStock": true,
-    "image": "/images/products/tcc-sorento.jpg",
-    "fitsCars": [
-      "kia-sorento-mq4"
-    ],
+    "image": "/images/products/3551-A_tsu_v_sbore.jpg",
+    "fitsCars": ["kia-sorento-mq4"],
     "universal": false
   },
   {
@@ -299,10 +267,8 @@
     "electricsIncluded": false,
     "price": 11300,
     "inStock": true,
-    "image": "/images/products/halty-creta-gs.jpg",
-    "fitsCars": [
-      "hyundai-creta-gs"
-    ],
+    "image": "/images/products/3553-D2.jpg",
+    "fitsCars": ["hyundai-creta-gs"],
     "universal": false
   },
   {
@@ -318,10 +284,8 @@
     "electricsIncluded": false,
     "price": 12100,
     "inStock": true,
-    "image": "/images/products/ptgroup-creta-su2.jpg",
-    "fitsCars": [
-      "hyundai-creta-su2"
-    ],
+    "image": "/images/products/3555-D2.jpg",
+    "fitsCars": ["hyundai-creta-su2"],
     "universal": false
   },
   {
@@ -337,10 +301,8 @@
     "electricsIncluded": false,
     "price": 18900,
     "inStock": true,
-    "image": "/images/products/bosal-tiguan2.jpg",
-    "fitsCars": [
-      "vw-tiguan-2"
-    ],
+    "image": "/images/products/3556-D2.jpg",
+    "fitsCars": ["vw-tiguan-2"],
     "universal": false
   },
   {
@@ -356,10 +318,8 @@
     "electricsIncluded": true,
     "price": 28700,
     "inStock": true,
-    "image": "/images/products/westfalia-tiguan2.jpg",
-    "fitsCars": [
-      "vw-tiguan-2"
-    ],
+    "image": "/images/products/3558-AK41_tsu_v_sbore.jpg",
+    "fitsCars": ["vw-tiguan-2"],
     "universal": false
   },
   {
@@ -375,10 +335,8 @@
     "electricsIncluded": false,
     "price": 6790,
     "inStock": true,
-    "image": "/images/products/lider-polo6.jpg",
-    "fitsCars": [
-      "vw-polo-6"
-    ],
+    "image": "/images/products/3558-D2.jpg",
+    "fitsCars": ["vw-polo-6"],
     "universal": false
   },
   {
@@ -394,10 +352,8 @@
     "electricsIncluded": false,
     "price": 16400,
     "inStock": true,
-    "image": "/images/products/aragon-octavia-a7.jpg",
-    "fitsCars": [
-      "skoda-octavia-a7"
-    ],
+    "image": "/images/products/5266-A_tsu_v_sbore.jpg",
+    "fitsCars": ["skoda-octavia-a7"],
     "universal": false
   },
   {
@@ -413,10 +369,8 @@
     "electricsIncluded": false,
     "price": 17600,
     "inStock": true,
-    "image": "/images/products/bosal-octavia-a8.jpg",
-    "fitsCars": [
-      "skoda-octavia-a8"
-    ],
+    "image": "/images/products/2108-D2.jpg",
+    "fitsCars": ["skoda-octavia-a8"],
     "universal": false
   },
   {
@@ -432,10 +386,8 @@
     "electricsIncluded": true,
     "price": 31200,
     "inStock": true,
-    "image": "/images/products/westfalia-kodiaq.jpg",
-    "fitsCars": [
-      "skoda-kodiaq-1"
-    ],
+    "image": "/images/products/2133-A.jpg",
+    "fitsCars": ["skoda-kodiaq-1"],
     "universal": false
   },
   {
@@ -451,10 +403,8 @@
     "electricsIncluded": false,
     "price": 8900,
     "inStock": true,
-    "image": "/images/products/baltex-duster1.jpg",
-    "fitsCars": [
-      "renault-duster-1"
-    ],
+    "image": "/images/products/2151-A.jpg",
+    "fitsCars": ["renault-duster-1"],
     "universal": false
   },
   {
@@ -470,10 +420,8 @@
     "electricsIncluded": false,
     "price": 10200,
     "inStock": true,
-    "image": "/images/products/tcc-duster2.jpg",
-    "fitsCars": [
-      "renault-duster-2"
-    ],
+    "image": "/images/products/2158-D2.jpg",
+    "fitsCars": ["renault-duster-2"],
     "universal": false
   },
   {
@@ -489,10 +437,8 @@
     "electricsIncluded": false,
     "price": 6490,
     "inStock": false,
-    "image": "/images/products/lider-logan2.jpg",
-    "fitsCars": [
-      "renault-logan-2"
-    ],
+    "image": "/images/products/2159-A.jpg",
+    "fitsCars": ["renault-logan-2"],
     "universal": false
   },
   {
@@ -508,10 +454,8 @@
     "electricsIncluded": false,
     "price": 10200,
     "inStock": true,
-    "image": "/images/products/tcc-qashqai-j11.jpg",
-    "fitsCars": [
-      "nissan-qashqai-j11"
-    ],
+    "image": "/images/products/2181-A.jpg",
+    "fitsCars": ["nissan-qashqai-j11"],
     "universal": false
   },
   {
@@ -527,11 +471,8 @@
     "electricsIncluded": false,
     "price": 17400,
     "inStock": true,
-    "image": "/images/products/bosal-cmf.jpg",
-    "fitsCars": [
-      "nissan-xtrail-t32",
-      "nissan-qashqai-j11"
-    ],
+    "image": "/images/products/2852-А ТСУ в сборе.jpg",
+    "fitsCars": ["nissan-xtrail-t32", "nissan-qashqai-j11"],
     "universal": false
   },
   {
@@ -547,10 +488,8 @@
     "electricsIncluded": false,
     "price": 12900,
     "inStock": true,
-    "image": "/images/products/ptgroup-qashqai-j12.jpg",
-    "fitsCars": [
-      "nissan-qashqai-j12"
-    ],
+    "image": "/images/products/2856-А ТСУ в сборе.jpg",
+    "fitsCars": ["nissan-qashqai-j12"],
     "universal": false
   },
   {
@@ -566,10 +505,8 @@
     "electricsIncluded": false,
     "price": 22600,
     "inStock": true,
-    "image": "/images/products/galia-outlander3.jpg",
-    "fitsCars": [
-      "mitsubishi-outlander-3"
-    ],
+    "image": "/images/products/3004-D2.jpg",
+    "fitsCars": ["mitsubishi-outlander-3"],
     "universal": false
   },
   {
@@ -585,10 +522,8 @@
     "electricsIncluded": false,
     "price": 14300,
     "inStock": true,
-    "image": "/images/products/tcc-outlander4.jpg",
-    "fitsCars": [
-      "mitsubishi-outlander-4"
-    ],
+    "image": "/images/products/3006-A.jpg",
+    "fitsCars": ["mitsubishi-outlander-4"],
     "universal": false
   },
   {
@@ -604,10 +539,8 @@
     "electricsIncluded": false,
     "price": 9200,
     "inStock": true,
-    "image": "/images/products/lider-asx.jpg",
-    "fitsCars": [
-      "mitsubishi-asx-1"
-    ],
+    "image": "/images/products/3006-D2.jpg",
+    "fitsCars": ["mitsubishi-asx-1"],
     "universal": false
   },
   {
@@ -623,10 +556,8 @@
     "electricsIncluded": false,
     "price": 12400,
     "inStock": true,
-    "image": "/images/products/ptgroup-tiggo7.jpg",
-    "fitsCars": [
-      "chery-tiggo-7-pro"
-    ],
+    "image": "/images/products/3097-A_tsu_v_sbore.jpg",
+    "fitsCars": ["chery-tiggo-7-pro"],
     "universal": false
   },
   {
@@ -642,10 +573,8 @@
     "electricsIncluded": false,
     "price": 9800,
     "inStock": true,
-    "image": "/images/products/lider-tiggo4.jpg",
-    "fitsCars": [
-      "chery-tiggo-4-pro"
-    ],
+    "image": "/images/products/3099-A.jpg",
+    "fitsCars": ["chery-tiggo-4-pro"],
     "universal": false
   },
   {
@@ -661,7 +590,7 @@
     "electricsIncluded": null,
     "price": 2400,
     "inStock": true,
-    "image": "/images/products/el-uni-7pin.jpg",
+    "image": "/images/products/3550-A_tsu_v_sbore.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -678,7 +607,7 @@
     "electricsIncluded": null,
     "price": 3100,
     "inStock": true,
-    "image": "/images/products/el-uni-13pin.jpg",
+    "image": "/images/products/3551-A_tsu_v_sbore.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -695,7 +624,7 @@
     "electricsIncluded": null,
     "price": 4900,
     "inStock": true,
-    "image": "/images/products/el-smart-block.jpg",
+    "image": "/images/products/3553-D2.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -712,12 +641,8 @@
     "electricsIncluded": null,
     "price": 6800,
     "inStock": true,
-    "image": "/images/products/el-vag.jpg",
-    "fitsCars": [
-      "vw-tiguan-2",
-      "skoda-octavia-a8",
-      "skoda-kodiaq-1"
-    ],
+    "image": "/images/products/3555-D2.jpg",
+    "fitsCars": ["vw-tiguan-2", "skoda-octavia-a8", "skoda-kodiaq-1"],
     "universal": false
   },
   {
@@ -733,7 +658,7 @@
     "electricsIncluded": null,
     "price": 1100,
     "inStock": true,
-    "image": "/images/products/el-socket-led.jpg",
+    "image": "/images/products/3556-D2.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -750,7 +675,7 @@
     "electricsIncluded": null,
     "price": 1500,
     "inStock": true,
-    "image": "/images/products/ac-ball-50.jpg",
+    "image": "/images/products/3558-AK41_tsu_v_sbore.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -767,7 +692,7 @@
     "electricsIncluded": null,
     "price": 790,
     "inStock": true,
-    "image": "/images/products/ac-adapter.jpg",
+    "image": "/images/products/3558-D2.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -784,7 +709,7 @@
     "electricsIncluded": null,
     "price": 250,
     "inStock": true,
-    "image": "/images/products/ac-cap.jpg",
+    "image": "/images/products/5266-A_tsu_v_sbore.jpg",
     "fitsCars": [],
     "universal": true
   },
@@ -801,7 +726,7 @@
     "electricsIncluded": null,
     "price": 1900,
     "inStock": true,
-    "image": "/images/products/ac-cover.jpg",
+    "image": "/images/products/2108-D2.jpg",
     "fitsCars": [],
     "universal": true
   }

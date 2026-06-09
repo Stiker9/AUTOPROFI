@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProducts, getProductById, getCarBySlug } from "@/lib/data";
@@ -117,8 +118,18 @@ export default async function ProductPage({
       <section className="border-b border-border">
         <div className="w-full px-6 lg:px-12 py-12 lg:py-20">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 lg:items-start">
-            {/* Left: product info */}
+            {/* Left: product image + info */}
             <div className="flex-1 min-w-0">
+              <div className="relative w-full max-w-lg aspect-[4/3] bg-bg-tertiary overflow-hidden mb-8">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
               <h1 className="font-display text-5xl lg:text-7xl text-white uppercase leading-none tracking-wide mb-3">
                 {product.name}
               </h1>
