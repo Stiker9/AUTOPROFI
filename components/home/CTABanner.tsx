@@ -1,0 +1,24 @@
+import Link from "next/link";
+
+export function CTABanner() {
+  return (
+    <section className="bg-accent">
+      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <p className="font-bold text-black text-lg">
+            Привезём и установим за 1–2 часа
+          </p>
+          <p className="text-black/70 text-sm mt-1">
+            Профессиональный монтаж, оформление документов, гарантия.
+          </p>
+        </div>
+        <Link
+          href="/contacts"
+          className="bg-black text-white hover:bg-black/80 font-semibold px-6 py-3 text-sm whitespace-nowrap transition-colors cursor-pointer"
+        >
+          Записаться →
+        </Link>
+      </div>
+    </section>
+  );
+}
