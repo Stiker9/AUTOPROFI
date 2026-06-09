@@ -5,7 +5,7 @@ export function HeroBanner() {
     <section className="w-full">
       <div className="relative w-full" style={{ aspectRatio: "2179 / 722" }}>
         <Image
-          src="/hero.jpg"
+          src="/hero.png"
           alt="Фаркопы с установкой — подбор по авто, установка, подключение электрики, гарантия"
           fill
           priority
