@@ -24,9 +24,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  font-family: var(--font-body);
-}
