@@ -8,7 +8,7 @@ const categories = [
 
 export function CategoryGrid() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="w-full px-6 lg:px-12 py-12">
       <h2 className="font-ui text-2xl font-bold text-white mb-6 uppercase tracking-wide">Каталог</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {categories.map((cat) => (

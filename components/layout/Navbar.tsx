@@ -14,7 +14,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-bg-primary border-b border-border">
       {/* Topbar */}
       <div className="bg-bg-secondary border-b border-border text-xs text-text-muted">
-        <div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
+        <div className="w-full px-6 lg:px-12 py-1.5 flex justify-between items-center">
           <a href="tel:+74951234567" className="hover:text-accent transition-colors">
             +7 (495) 123-45-67
           </a>
@@ -24,7 +24,7 @@ export function Navbar() {
       </div>
 
       {/* Main nav */}
-      <nav className="max-w-7xl mx-auto px-4 flex items-center h-14 gap-8">
+      <nav className="w-full px-6 lg:px-12 flex items-center h-14 gap-8">
         <Link href="/" className="font-display text-2xl tracking-widest text-accent shrink-0 uppercase">
           AUTOPROFI
         </Link>

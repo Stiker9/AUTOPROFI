@@ -3,7 +3,7 @@ import Link from "next/link";
 export function CTABanner() {
   return (
     <section className="bg-accent">
-      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="w-full px-6 lg:px-12 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="font-ui font-bold text-black text-lg">
             Привезём и установим за 1–2 часа

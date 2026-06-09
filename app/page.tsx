@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <div className="bg-bg-secondary border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 py-4 text-text-dim text-sm">
+        <div className="w-full px-6 lg:px-12 py-4 text-text-dim text-sm">
           [Селектор авто — Phase 2]
         </div>
       </div>

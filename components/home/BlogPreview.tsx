@@ -5,7 +5,7 @@ import { BlogCard } from "@/components/shared/BlogCard";
 export function BlogPreview() {
   const posts = getLatestBlogPosts(3);
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="w-full px-6 lg:px-12 py-12">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-white">Полезное</h2>
         <Link href="/blog" className="text-sm text-accent hover:text-accent-hover transition-colors">
