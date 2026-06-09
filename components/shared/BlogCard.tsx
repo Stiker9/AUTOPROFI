@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost } from "@/types";
 
@@ -11,8 +12,15 @@ export function BlogCard({ post }: BlogCardProps) {
       href={`/blog/${post.slug}`}
       className="group block bg-bg-secondary border border-border hover:border-white transition-colors duration-200 cursor-pointer"
     >
-      <div className="h-40 bg-bg-tertiary flex items-center justify-center text-text-dim text-sm">
-        фото
+      <div className="relative h-44 bg-bg-tertiary overflow-hidden">
+        <Image
+          src={post.image}
+          alt=""
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, 33vw"
+        />
+        <div className="absolute inset-0 bg-black/15 transition-colors duration-200 group-hover:bg-black/5" />
       </div>
       <div className="p-4">
         <p className="text-xs text-text-dim mb-2">
