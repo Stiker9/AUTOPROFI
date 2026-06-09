@@ -1,30 +1,31 @@
 export interface Car {
   slug: string;
-  make: string;
-  makeSlug: string;
+  brand: string;
   model: string;
-  modelSlug: string;
-  generation: number;
-  yearStart: number;
-  yearEnd: number | null;
-  bodyTypes: string[];
-  displayName: string;
+  generation: string;
+  body: string;
+  yearFrom: number;
+  yearTo: number | null;
+  popular: boolean;
+  title: string;
 }
 
 export interface Product {
   id: string;
+  sku: string;
   name: string;
   brand: string;
-  brandDisplay: string;
   category: "towbars" | "electrics" | "accessories";
-  hookType?: "flanged" | "removable" | "vertical" | null;
+  hookType: string | null;
+  towLoad: number | null;
+  vertLoad: number | null;
+  bumperCut: string | null;
+  electricsIncluded: boolean | null;
   price: number;
+  inStock: boolean;
+  image: string;
   fitsCars: string[];
-  images: string[];
-  description: string;
-  maxLoad?: number;
-  ballLoad?: number;
-  articleNumber?: string;
+  universal: boolean;
 }
 
 export interface BlogPost {

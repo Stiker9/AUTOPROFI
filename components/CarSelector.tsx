@@ -31,14 +31,14 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
   useEffect(() => {
     if (initialMake) {
       const foundMake = makes.find(
-        (m) => m.toLowerCase() === initialMake.toLowerCase()
+        (m) => m.toLowerCase().replace(/\s+/g, "-") === initialMake.toLowerCase()
       );
       if (foundMake) {
         setMake(foundMake);
         if (initialModel) {
           const foundModels = getModelsByMake(foundMake);
           const foundModel = foundModels.find(
-            (m) => m.toLowerCase() === initialModel.toLowerCase()
+            (m) => m.toLowerCase().replace(/\s+/g, "-") === initialModel.toLowerCase()
           );
           if (foundModel) setModel(foundModel);
         }

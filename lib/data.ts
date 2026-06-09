@@ -4,8 +4,8 @@ import carsData from "@/data/cars.json";
 import productsData from "@/data/products.json";
 import blogData from "@/data/blog.json";
 
-const cars = carsData as Car[];
-const products = productsData as Product[];
+const cars = carsData as unknown as Car[];
+const products = productsData as unknown as Product[];
 const blog = blogData as BlogPost[];
 
 // ─── Авто ────────────────────────────────────────────────────────────────────
@@ -19,22 +19,22 @@ export function getCarBySlug(slug: string): Car | undefined {
 }
 
 export function getMakes(): string[] {
-  return [...new Set(cars.map((c) => c.make))].sort();
+  return [...new Set(cars.map((c) => c.brand))].sort();
 }
 
-export function getModelsByMake(make: string): string[] {
+export function getModelsByMake(brand: string): string[] {
   return [...new Set(
-    cars.filter((c) => c.make === make).map((c) => c.model)
+    cars.filter((c) => c.brand === brand).map((c) => c.model)
   )].sort();
 }
 
-export function getYearsByMakeModel(make: string, model: string): number[] {
-  const matched = cars.filter((c) => c.make === make && c.model === model);
+export function getYearsByMakeModel(brand: string, model: string): number[] {
+  const matched = cars.filter((c) => c.brand === brand && c.model === model);
   const years = new Set<number>();
   const currentYear = new Date().getFullYear();
   matched.forEach((c) => {
-    const end = c.yearEnd ?? currentYear;
-    for (let y = c.yearStart; y <= end; y++) {
+    const end = c.yearTo ?? currentYear;
+    for (let y = c.yearFrom; y <= end; y++) {
       years.add(y);
     }
   });
@@ -42,33 +42,20 @@ export function getYearsByMakeModel(make: string, model: string): number[] {
 }
 
 export function getGenerationByMakeModelYear(
-  make: string,
+  brand: string,
   model: string,
   year: number
 ): Car | undefined {
   const currentYear = new Date().getFullYear();
   return cars.find((c) => {
-    const end = c.yearEnd ?? currentYear;
-    return c.make === make && c.model === model &&
-           year >= c.yearStart && year <= end;
+    const end = c.yearTo ?? currentYear;
+    return c.brand === brand && c.model === model &&
+           year >= c.yearFrom && year <= end;
   });
 }
 
-const POPULAR_CAR_SLUGS = [
-  "toyota-rav4-5-2019",
-  "kia-sportage-5-2021",
-  "volkswagen-tiguan-2-2016",
-  "hyundai-tucson-4-2021",
-  "nissan-xtrail-4-2022",
-  "toyota-rav4-4-2013",
-  "kia-sportage-4-2016",
-];
-
-export function getPopularCars(limit = 7): Car[] {
-  return POPULAR_CAR_SLUGS
-    .slice(0, limit)
-    .map((slug) => getCarBySlug(slug))
-    .filter((c): c is Car => c !== undefined);
+export function getPopularCars(limit = 10): Car[] {
+  return cars.filter((c) => c.popular).slice(0, limit);
 }
 
 // ─── Товары ──────────────────────────────────────────────────────────────────

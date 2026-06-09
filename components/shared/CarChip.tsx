@@ -6,13 +6,15 @@ interface CarChipProps {
 }
 
 export function CarChip({ car }: CarChipProps) {
-  const href = `/cars?make=${car.makeSlug}&model=${car.modelSlug}`;
+  const makeSlug = car.brand.toLowerCase().replace(/\s+/g, "-");
+  const modelSlug = car.model.toLowerCase().replace(/\s+/g, "-");
+  const href = `/cars?make=${makeSlug}&model=${modelSlug}`;
   return (
     <Link
       href={href}
       className="font-ui inline-block border border-border hover:border-white hover:text-white text-text-muted text-xs font-medium px-3 py-1.5 transition-colors duration-150 cursor-pointer"
     >
-      {car.make} {car.model}
+      {car.brand} {car.model}
     </Link>
   );
 }
