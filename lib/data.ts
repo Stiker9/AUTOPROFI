@@ -82,6 +82,35 @@ export function getProductsByBrand(brand: string): Product[] {
   return products.filter((p) => p.brand === brand);
 }
 
+function slugifyBrand(brand: string): string {
+  const map: Record<string, string> = {
+    "а":"a","б":"b","в":"v","г":"g","д":"d","е":"e","ё":"yo","ж":"zh",
+    "з":"z","и":"i","й":"y","к":"k","л":"l","м":"m","н":"n","о":"o",
+    "п":"p","р":"r","с":"s","т":"t","у":"u","ф":"f","х":"kh","ц":"ts",
+    "ч":"ch","ш":"sh","щ":"sch","ъ":"","ы":"y","ь":"","э":"e","ю":"yu","я":"ya",
+  };
+  return brand
+    .toLowerCase()
+    .split("")
+    .map((c) => map[c] ?? c)
+    .join("")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export function getProductBrands(): Array<{ name: string; slug: string }> {
+  const names = [...new Set(products.map((p) => p.brand))].sort();
+  return names.map((name) => ({ name, slug: slugifyBrand(name) }));
+}
+
+export function getProductsByBrandSlug(brandSlug: string): Product[] {
+  const brand = getProductBrands().find((b) => b.slug === brandSlug);
+  if (!brand) return [];
+  return products.filter((p) => p.brand === brand.name);
+}
+
 // ─── Блог ─────────────────────────────────────────────────────────────────────
 
 export function getBlogPosts(): BlogPost[] {
