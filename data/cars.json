@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "toyota-rav4-5-2019",
+    "make": "Toyota",
+    "makeSlug": "toyota",
+    "model": "RAV4",
+    "modelSlug": "rav4",
+    "generation": 5,
+    "yearStart": 2019,
+    "yearEnd": null,
+    "bodyTypes": ["SUV"],
+    "displayName": "Toyota RAV4 (V поколение, 2019–н.в.)"
+  },
+  {
+    "slug": "toyota-rav4-4-2013",
+    "make": "Toyota",
+    "makeSlug": "toyota",
+    "model": "RAV4",
+    "modelSlug": "rav4",
+    "generation": 4,
+    "yearStart": 2013,
+    "yearEnd": 2018,
+    "bodyTypes": ["SUV"],
+    "displayName": "Toyota RAV4 (IV поколение, 2013–2018)"
+  },
+  {
+    "slug": "kia-sportage-4-2016",
+    "make": "Kia",
+    "makeSlug": "kia",
+    "model": "Sportage",
+    "modelSlug": "sportage",
+    "generation": 4,
+    "yearStart": 2016,
+    "yearEnd": 2021,
+    "bodyTypes": ["SUV"],
+    "displayName": "Kia Sportage (IV поколение, 2016–2021)"
+  },
+  {
+    "slug": "kia-sportage-5-2021",
+    "make": "Kia",
+    "makeSlug": "kia",
+    "model": "Sportage",
+    "modelSlug": "sportage",
+    "generation": 5,
+    "yearStart": 2021,
+    "yearEnd": null,
+    "bodyTypes": ["SUV"],
+    "displayName": "Kia Sportage (V поколение, 2021–н.в.)"
+  },
+  {
+    "slug": "volkswagen-tiguan-2-2016",
+    "make": "Volkswagen",
+    "makeSlug": "volkswagen",
+    "model": "Tiguan",
+    "modelSlug": "tiguan",
+    "generation": 2,
+    "yearStart": 2016,
+    "yearEnd": null,
+    "bodyTypes": ["SUV"],
+    "displayName": "Volkswagen Tiguan (II поколение, 2016–н.в.)"
+  },
+  {
+    "slug": "hyundai-tucson-4-2021",
+    "make": "Hyundai",
+    "makeSlug": "hyundai",
+    "model": "Tucson",
+    "modelSlug": "tucson",
+    "generation": 4,
+    "yearStart": 2021,
+    "yearEnd": null,
+    "bodyTypes": ["SUV"],
+    "displayName": "Hyundai Tucson (IV поколение, 2021–н.в.)"
+  },
+  {
+    "slug": "nissan-xtrail-4-2022",
+    "make": "Nissan",
+    "makeSlug": "nissan",
+    "model": "X-Trail",
+    "modelSlug": "xtrail",
+    "generation": 4,
+    "yearStart": 2022,
+    "yearEnd": null,
+    "bodyTypes": ["SUV"],
+    "displayName": "Nissan X-Trail (IV поколение, 2022–н.в.)"
+  }
+]
