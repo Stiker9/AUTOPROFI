@@ -24,12 +24,12 @@ export function Navbar() {
       </div>
 
       {/* Main nav */}
-      <nav className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
-        <Link href="/" className="font-display text-2xl tracking-widest text-accent">
+      <nav className="max-w-7xl mx-auto px-4 flex items-center h-14 gap-8">
+        <Link href="/" className="font-display text-2xl tracking-widest text-accent shrink-0">
           AUTOPROFI
         </Link>
 
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-6 flex-1">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -43,7 +43,7 @@ export function Navbar() {
         </ul>
 
         <button
-          className="md:hidden text-text-muted hover:text-white cursor-pointer"
+          className="md:hidden ml-auto text-text-muted hover:text-white cursor-pointer"
           aria-label="Открыть меню"
         >
           ☰
