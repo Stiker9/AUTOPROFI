@@ -1,4 +1,3 @@
-import { Topbar } from "@/components/home/Topbar";
 import { HeroBanner } from "@/components/home/HeroBanner";
 import { TrustBar } from "@/components/home/TrustBar";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
@@ -9,7 +8,6 @@ import { BlogPreview } from "@/components/home/BlogPreview";
 export default function HomePage() {
   return (
     <>
-      <Topbar />
       <div className="bg-bg-secondary border-b border-border">
         <div className="max-w-7xl mx-auto px-4 py-4 text-text-dim text-sm">
           [Селектор авто — Phase 2]
