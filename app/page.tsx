@@ -4,15 +4,12 @@ import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { PopularCars } from "@/components/home/PopularCars";
 import { CTABanner } from "@/components/home/CTABanner";
 import { BlogPreview } from "@/components/home/BlogPreview";
+import { CarSelector } from "@/components/CarSelector";
 
 export default function HomePage() {
   return (
     <>
-      <div className="bg-bg-secondary border-b border-border">
-        <div className="w-full px-6 lg:px-12 py-4 text-text-dim text-sm">
-          [Селектор авто — Phase 2]
-        </div>
-      </div>
+      <CarSelector />
       <HeroBanner />
       <TrustBar />
       <CategoryGrid />
