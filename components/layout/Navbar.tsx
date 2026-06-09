@@ -25,7 +25,7 @@ export function Navbar() {
 
       {/* Main nav */}
       <nav className="max-w-7xl mx-auto px-4 flex items-center h-14 gap-8">
-        <Link href="/" className="font-display text-2xl tracking-widest text-accent shrink-0">
+        <Link href="/" className="font-display text-2xl tracking-widest text-accent shrink-0 uppercase">
           AUTOPROFI
         </Link>
 
@@ -34,7 +34,7 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-text-muted hover:text-white transition-colors duration-150"
+                className="font-ui text-sm font-medium text-text-muted hover:text-white transition-colors duration-150"
               >
                 {link.label}
               </Link>

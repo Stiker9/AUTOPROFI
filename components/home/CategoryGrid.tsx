@@ -9,7 +9,7 @@ const categories = [
 export function CategoryGrid() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
-      <h2 className="text-2xl font-bold text-white mb-6">Каталог</h2>
+      <h2 className="font-ui text-2xl font-bold text-white mb-6 uppercase tracking-wide">Каталог</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {categories.map((cat) => (
           <Link
@@ -20,10 +20,10 @@ export function CategoryGrid() {
             <div className="h-24 bg-bg-tertiary mb-4 flex items-center justify-center text-text-dim text-sm">
               фото
             </div>
-            <p className="font-semibold text-white group-hover:text-accent transition-colors">
+            <p className="font-ui font-semibold text-white group-hover:text-accent transition-colors uppercase tracking-wide text-sm">
               {cat.label}
             </p>
-            <p className="text-xs text-text-dim mt-1">{cat.sub}</p>
+            <p className="font-ui text-xs text-text-dim mt-1">{cat.sub}</p>
           </Link>
         ))}
       </div>

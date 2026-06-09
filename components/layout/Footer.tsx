@@ -54,7 +54,7 @@ export function Footer() {
 
           {columns.map((col) => (
             <div key={col.title}>
-              <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3">
+              <p className="font-ui text-xs font-semibold uppercase tracking-wider text-text-muted mb-3">
                 {col.title}
               </p>
               <ul className="space-y-2">
