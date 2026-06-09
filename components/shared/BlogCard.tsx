@@ -9,7 +9,7 @@ export function BlogCard({ post }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group block bg-bg-secondary border border-border hover:border-accent transition-colors duration-200"
+      className="group block bg-bg-secondary border border-border hover:border-accent transition-colors duration-200 cursor-pointer"
     >
       <div className="h-40 bg-bg-tertiary flex items-center justify-center text-text-dim text-sm">
         фото
