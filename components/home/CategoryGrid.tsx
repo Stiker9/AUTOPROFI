@@ -15,12 +15,12 @@ export function CategoryGrid() {
           <Link
             key={cat.href}
             href={cat.href}
-            className="group block bg-bg-secondary border border-border hover:border-accent p-6 transition-colors duration-200 cursor-pointer"
+            className="group block bg-bg-secondary border border-border hover:border-white p-6 transition-colors duration-200 cursor-pointer"
           >
             <div className="h-24 bg-bg-tertiary mb-4 flex items-center justify-center text-text-dim text-sm">
               фото
             </div>
-            <p className="font-ui font-semibold text-white group-hover:text-accent transition-colors uppercase tracking-wide text-sm">
+            <p className="font-ui font-semibold text-white group-hover:text-white transition-colors uppercase tracking-wide text-sm">
               {cat.label}
             </p>
             <p className="font-ui text-xs text-text-dim mt-1">{cat.sub}</p>

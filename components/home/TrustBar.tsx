@@ -13,7 +13,7 @@ export function TrustBar() {
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
           {items.map((item) => (
             <li key={item.label} className="flex flex-col items-center text-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-accent" />
+              <div className="w-2 h-2 rounded-full bg-white" />
               <span className="text-xs text-text-muted font-medium">{item.label}</span>
             </li>
           ))}

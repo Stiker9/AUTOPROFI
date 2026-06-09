@@ -34,18 +34,18 @@ export function Footer() {
       <div className="w-full px-6 lg:px-12 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <p className="font-display text-xl text-accent tracking-widest mb-3">
+            <p className="font-display text-xl text-white tracking-widest mb-3">
               AUTOPROFI
             </p>
             <address className="not-italic text-sm text-text-dim space-y-1">
               <p>г. Москва, ул. Примерная, 1</p>
               <p>
-                <a href="tel:+74951234567" className="hover:text-accent transition-colors">
+                <a href="tel:+74951234567" className="hover:text-white transition-colors">
                   +7 (495) 123-45-67
                 </a>
               </p>
               <p>
-                <a href="mailto:info@autoprofi.ru" className="hover:text-accent transition-colors">
+                <a href="mailto:info@autoprofi.ru" className="hover:text-white transition-colors">
                   info@autoprofi.ru
                 </a>
               </p>

@@ -15,17 +15,17 @@ export function Navbar() {
       {/* Topbar */}
       <div className="bg-bg-secondary border-b border-border text-xs text-text-muted">
         <div className="w-full px-6 lg:px-12 py-1.5 flex justify-between items-center">
-          <a href="tel:+74951234567" className="hover:text-accent transition-colors">
+          <a href="tel:+74951234567" className="hover:text-white transition-colors">
             +7 (495) 123-45-67
           </a>
           <span className="hidden sm:block">Пн–Сб: 9:00–19:00</span>
-          <span className="text-accent font-medium">Бесплатный выезд на замер</span>
+          <span className="text-white font-medium">Бесплатный выезд на замер</span>
         </div>
       </div>
 
       {/* Main nav */}
       <nav className="w-full px-6 lg:px-12 flex items-center h-14 gap-8">
-        <Link href="/" className="font-display text-2xl tracking-widest text-accent shrink-0 uppercase">
+        <Link href="/" className="font-display text-2xl tracking-widest text-white shrink-0 uppercase">
           AUTOPROFI
         </Link>
 

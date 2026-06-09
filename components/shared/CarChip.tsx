@@ -10,7 +10,7 @@ export function CarChip({ car }: CarChipProps) {
   return (
     <Link
       href={href}
-      className="font-ui inline-block border border-border hover:border-accent hover:text-accent text-text-muted text-xs font-medium px-3 py-1.5 transition-colors duration-150 cursor-pointer"
+      className="font-ui inline-block border border-border hover:border-white hover:text-white text-text-muted text-xs font-medium px-3 py-1.5 transition-colors duration-150 cursor-pointer"
     >
       {car.make} {car.model}
     </Link>
