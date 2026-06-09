@@ -1,0 +1,13 @@
+[33m9d038e4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m fix: update HeroBanner src to hero.png, add hero image
+[33m13775ef[m style: add cursor-pointer to CarChip and BlogCard links
+[33ma5a7974[m feat: add home page — all 10 blocks (CarSelector placeholder for Phase 2)
+[33m7a2b3e2[m feat: add Footer component
+[33m6adf595[m feat: add Navbar component
+[33md515fc2[m test: add unit tests for lib/data.ts — 15 tests passing
+[33m4305629[m feat: add lib/data.ts — typed data access layer
+[33m82fdd3e[m feat: add JSON mocks — cars (7 generations), products (5), blog (3)
+[33m259c2ee[m feat: add TypeScript types for Car, Product, BlogPost
+[33m2d85401[m style: remove redundant body CSS (already applied via Tailwind utilities)
+[33mb8fa211[m feat: add design system — Tailwind v4 tokens, Bebas Neue + Inter fonts
+[33m785a8d5[m chore: add Vitest for unit testing
+[33m9553395[m chore: init Next.js 14 App Router project

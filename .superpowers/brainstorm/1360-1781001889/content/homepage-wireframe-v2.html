@@ -1,0 +1,278 @@
+<h2>Wireframe v2 — Главная AUTOPROFI</h2>
+<p class="subtitle">Исправлена таксономия блока 6. Селектор и Hero — раздельные блоки (осознанное решение).</p>
+
+<style>
+  .wf-wrap { font-family: monospace; max-width: 760px; margin: 0 auto; }
+  .wf-section {
+    border: 2px dashed #444;
+    border-radius: 6px;
+    margin: 7px 0;
+    overflow: hidden;
+    background: #1a1a1a;
+  }
+  .wf-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 9px 16px;
+    background: #111;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+  }
+  .wf-header .num { color: #555; margin-right: 6px; }
+  .tag {
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: .5px;
+  }
+  .tag.key    { background: #3b82f6; color: #fff; }
+  .tag.seo    { background: #10b981; color: #fff; }
+  .tag.trust  { background: #8b5cf6; color: #fff; }
+  .tag.conv   { background: #ef4444; color: #fff; }
+  .tag.fixed  { background: #f59e0b; color: #000; }
+  .wf-body { padding: 10px 16px; }
+  .wf-cols { display: flex; gap: 8px; flex-wrap: wrap; }
+  .wf-col {
+    flex: 1; min-width: 80px;
+    border: 1px solid #2a2a2a; border-radius: 4px;
+    padding: 7px 10px; font-size: 12px; color: #999;
+    background: #0d0d0d; text-align: center;
+  }
+  .wf-col.accent { border-color: #f59e0b55; color: #f59e0b; font-weight: 700; }
+  .wf-col.dim { opacity: .5; }
+  .wf-label { font-size: 13px; font-weight: 700; color: #e2e2e2; margin-bottom: 6px; }
+  .wf-desc { font-size: 11px; color: #555; margin-top: 6px; font-style: italic; }
+  .wf-img {
+    background: #181818; border-radius: 4px;
+    height: 44px; display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: #444; margin-top: 6px;
+  }
+  .wf-pill {
+    display: inline-block;
+    font-size: 11px; padding: 3px 10px; border-radius: 20px;
+    border: 1px solid #2a2a2a; color: #777; margin: 3px 3px 0 0;
+  }
+  .wf-pill:hover { border-color: #f59e0b; color: #f59e0b; }
+  .hero-mock {
+    background: linear-gradient(135deg, #0a0a0a 55%, #1a0f00 100%);
+    border-radius: 4px; padding: 18px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-top: 6px;
+  }
+  .hero-left { flex: 2; }
+  .hero-right { flex: 1; text-align: center; }
+  .decision-note {
+    background: #0d1a10; border: 1px solid #1a3a20; border-radius: 4px;
+    padding: 8px 12px; font-size: 11px; color: #4ade80; margin-top: 8px;
+  }
+  .fix-note {
+    background: #1a1000; border: 1px solid #3a2800; border-radius: 4px;
+    padding: 8px 12px; font-size: 11px; color: #f59e0b; margin-top: 8px;
+  }
+</style>
+
+<div class="wf-wrap">
+
+  <!-- 1. Topbar -->
+  <div class="wf-section">
+    <div class="wf-header"><span><span class="num">01</span> Topbar</span></div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col">📞 +7 (XXX) XXX-XX-XX</div>
+        <div class="wf-col">Пн–Сб · 9:00–19:00</div>
+        <div class="wf-col accent">Бесплатный выезд на замер</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header -->
+  <div class="wf-section">
+    <div class="wf-header"><span><span class="num">02</span> Header / Nav</span></div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col accent" style="max-width:100px; font-size:14px; font-weight:900">AUTOPROFI</div>
+        <div class="wf-col">Каталог ▾</div>
+        <div class="wf-col">Подбор по авто</div>
+        <div class="wf-col">Услуги</div>
+        <div class="wf-col">О нас</div>
+        <div class="wf-col">FAQ</div>
+        <div class="wf-col">Контакты</div>
+        <div class="wf-col" style="max-width:40px">🔍</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CAR SELECTOR BAR — решение принято: отдельно -->
+  <div class="wf-section" style="border-color: #3b82f6; border-style: solid;">
+    <div class="wf-header" style="background:#0d1629;">
+      <span><span class="num">03</span> Селектор авто</span>
+      <span class="tag key">КЛЮЧЕВОЙ · ОТДЕЛЬНЫЙ БЛОК</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-label">Найди фаркоп для своего автомобиля</div>
+      <div class="wf-cols" style="margin-top:8px">
+        <div class="wf-col">Марка<br><small style="color:#f59e0b">Nissan ▾</small></div>
+        <div class="wf-col">Модель<br><small style="color:#f59e0b">X-Trail ▾</small></div>
+        <div class="wf-col">Год<br><small style="color:#f59e0b">2023 ▾</small></div>
+        <div class="wf-col">Кузов<br><small style="color:#555">опц. ▾</small></div>
+        <div class="wf-col accent" style="font-size:13px">🔍 Подобрать</div>
+      </div>
+      <div class="decision-note">✔ Решение: отдельная полоса над Hero. Максимальная видимость, гарантированный контраст, нет конкуренции с фото.</div>
+    </div>
+  </div>
+
+  <!-- 4. Hero Banner -->
+  <div class="wf-section">
+    <div class="wf-header"><span><span class="num">04</span> Hero Banner</span></div>
+    <div class="wf-body">
+      <div class="hero-mock">
+        <div class="hero-left">
+          <div style="font-size:20px; font-weight:900; color:#f59e0b; letter-spacing:-0.5px; line-height:1.1">ФАРКОПЫ<br>ПОД ЛЮБОЕ АВТО</div>
+          <div style="font-size:11px; color:#666; margin-top:6px">Продажа · Установка · Гарантия · Документы</div>
+          <div style="margin-top:12px">
+            <span style="background:#f59e0b; color:#000; padding:5px 16px; border-radius:3px; font-size:11px; font-weight:700">СМОТРЕТЬ КАТАЛОГ</span>
+            <span style="color:#666; font-size:11px; margin-left:10px">или записаться →</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div style="background:#222; border-radius:4px; padding:16px; font-size:11px; color:#555; border: 1px solid #2a2a2a;">
+            📸<br>фото авто<br>сзади с<br>фаркопом
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Trust -->
+  <div class="wf-section">
+    <div class="wf-header">
+      <span><span class="num">05</span> Преимущества</span>
+      <span class="tag trust">TRUST</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col">🔧<br><small>Профустановка</small></div>
+        <div class="wf-col">📋<br><small>Документы / ТО</small></div>
+        <div class="wf-col">✅<br><small>Гарантия 2 года</small></div>
+        <div class="wf-col">🚗<br><small>500+ авто в базе</small></div>
+        <div class="wf-col">📍<br><small>Выезд мастера</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Категории — ИСПРАВЛЕНО -->
+  <div class="wf-section" style="border-color: #f59e0b; border-style: solid;">
+    <div class="wf-header" style="background:#130f00">
+      <span><span class="num">06</span> Каталог по категориям</span>
+      <span class="tag fixed">ИСПРАВЛЕНО</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols" style="margin-top:4px">
+        <div class="wf-col">
+          <div class="wf-img">📸</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc; font-weight:700">Фаркопы</div>
+          <div style="font-size:10px; color:#555">фланцевые, съёмные,<br>вертикальные — внутри</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img">📸</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc; font-weight:700">Электрика</div>
+          <div style="font-size:10px; color:#555">розетки, жгуты,<br>блоки согласования</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img">📸</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc; font-weight:700">Аксессуары</div>
+          <div style="font-size:10px; color:#555">шары, адаптеры,<br>накладки</div>
+        </div>
+        <div class="wf-col dim">
+          <div class="wf-img">📸</div>
+          <div style="margin-top:6px; font-size:12px; color:#777; font-weight:700">Установка</div>
+          <div style="font-size:10px; color:#444">ссылка на /services</div>
+        </div>
+      </div>
+      <div class="fix-note">✔ Исправлено: типы крюка убраны с главной → они фильтры внутри /catalog. Здесь только категории верхнего уровня.</div>
+    </div>
+  </div>
+
+  <!-- 7. Популярные авто SEO -->
+  <div class="wf-section">
+    <div class="wf-header">
+      <span><span class="num">07</span> Популярные авто</span>
+      <span class="tag seo">SEO</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-label">Часто ищут фаркоп для:</div>
+      <div style="margin-top:8px">
+        <span class="wf-pill">Toyota RAV4</span>
+        <span class="wf-pill">Kia Sportage</span>
+        <span class="wf-pill">Hyundai Tucson</span>
+        <span class="wf-pill">VW Tiguan</span>
+        <span class="wf-pill">Skoda Kodiaq</span>
+        <span class="wf-pill">Nissan X-Trail</span>
+        <span class="wf-pill">Lada Vesta</span>
+        <span class="wf-pill">Renault Duster</span>
+        <span class="wf-pill">Ford Explorer</span>
+        <span class="wf-pill">+ все авто →</span>
+      </div>
+      <div class="wf-desc">Каждый чип = &lt;a href="/cars/[carSlug]"&gt; — ссылки на SEO-страницы, видимые в Google.</div>
+    </div>
+  </div>
+
+  <!-- 8. CTA Установка -->
+  <div class="wf-section">
+    <div class="wf-header">
+      <span><span class="num">08</span> CTA — Запись на установку</span>
+      <span class="tag conv">КОНВЕРСИЯ</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col" style="flex:3; text-align:left; padding: 12px 16px;">
+          <div class="wf-label">Привезём и установим за 1–2 часа</div>
+          <div style="font-size:11px; color:#555; margin-top:4px">Профессиональный монтаж, оформление документов, гарантия.</div>
+        </div>
+        <div class="wf-col accent" style="max-width:160px; font-size:13px; display:flex; align-items:center; justify-content:center;">
+          Записаться →
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Блог -->
+  <div class="wf-section">
+    <div class="wf-header">
+      <span><span class="num">09</span> Блог / Полезное</span>
+      <span class="tag seo">SEO</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col"><div class="wf-img">📰</div><div style="margin-top:5px; font-size:11px; color:#aaa">Как выбрать фаркоп</div></div>
+        <div class="wf-col"><div class="wf-img">📰</div><div style="margin-top:5px; font-size:11px; color:#aaa">Типы и отличия</div></div>
+        <div class="wf-col"><div class="wf-img">📰</div><div style="margin-top:5px; font-size:11px; color:#aaa">Нужна ли электрика?</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Footer -->
+  <div class="wf-section">
+    <div class="wf-header"><span><span class="num">10</span> Footer</span></div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col" style="text-align:left">
+          <strong style="color:#f59e0b; font-size:13px">AUTOPROFI</strong><br>
+          <small style="color:#555; line-height:1.8">Адрес<br>Телефон<br>Email<br>ИНН/ОГРН</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777; line-height:2">Каталог<br>По маркам<br>Электрика<br>Аксессуары</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777; line-height:2">Услуги<br>О компании<br>FAQ<br>Блог</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777; line-height:2">Доставка<br>Гарантия<br>Контакты<br>VK / TG</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

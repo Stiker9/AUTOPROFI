@@ -1,0 +1,267 @@
+<h2>Wireframe — Главная страница AUTOPROFI</h2>
+<p class="subtitle">Структура вдохновлена TAG Towbars. Нажми на секцию чтобы выбрать / отметить вопрос.</p>
+
+<style>
+  .wf-wrap { font-family: monospace; max-width: 760px; margin: 0 auto; }
+  .wf-section {
+    border: 2px dashed #444;
+    border-radius: 6px;
+    margin: 8px 0;
+    overflow: hidden;
+    background: #1a1a1a;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+  }
+  .wf-section:hover { border-color: #f59e0b; background: #211e14; }
+  .wf-section.selected { border-color: #f59e0b; background: #2a2010; }
+  .wf-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 16px;
+    background: #111;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+  }
+  .wf-header .tag {
+    background: #f59e0b;
+    color: #000;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  .wf-header .tag.seo { background: #10b981; }
+  .wf-header .tag.key { background: #3b82f6; }
+  .wf-header .tag.trust { background: #8b5cf6; }
+  .wf-body { padding: 12px 16px; }
+  .wf-cols { display: flex; gap: 8px; flex-wrap: wrap; }
+  .wf-col {
+    flex: 1; min-width: 100px;
+    border: 1px solid #333; border-radius: 4px;
+    padding: 8px 10px; font-size: 12px; color: #aaa;
+    background: #0d0d0d; text-align: center;
+  }
+  .wf-col.accent { border-color: #f59e0b44; color: #f59e0b; }
+  .wf-label { font-size: 13px; font-weight: 700; color: #e2e2e2; margin-bottom: 6px; }
+  .wf-desc { font-size: 12px; color: #666; margin-top: 4px; }
+  .wf-row { display: flex; gap: 8px; margin-top: 6px; }
+  .wf-pill {
+    font-size: 11px; padding: 3px 10px; border-radius: 20px;
+    border: 1px solid #333; color: #888;
+  }
+  .wf-img {
+    background: #222; border-radius: 4px;
+    height: 50px; display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: #555; margin-top: 6px;
+  }
+</style>
+
+<div class="wf-wrap">
+
+  <!-- 1. Topbar -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="topbar">
+    <div class="wf-header">
+      <span>1. Topbar</span>
+      <span class="tag">КОНТАКТЫ</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col">📞 +7 (XXX) XXX-XX-XX</div>
+        <div class="wf-col">Работаем: Пн–Сб 9:00–19:00</div>
+        <div class="wf-col accent">Бесплатный выезд на замер</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="header">
+    <div class="wf-header">
+      <span>2. Header / Nav</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col accent" style="max-width:100px">AUTOPROFI</div>
+        <div class="wf-col">Каталог ▾</div>
+        <div class="wf-col">Подбор по авто</div>
+        <div class="wf-col">Услуги</div>
+        <div class="wf-col">О нас</div>
+        <div class="wf-col">FAQ</div>
+        <div class="wf-col">Контакты</div>
+        <div class="wf-col" style="max-width:60px">🔍</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Car Selector Bar — KEY -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="car-selector">
+    <div class="wf-header">
+      <span>3. Селектор авто — BAR</span>
+      <span class="tag key">КЛЮЧЕВОЙ БЛОК</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-label">Подберите фаркоп для своего автомобиля</div>
+      <div class="wf-cols" style="margin-top:8px">
+        <div class="wf-col">Марка ▾<br><small style="color:#555">Nissan</small></div>
+        <div class="wf-col">Модель ▾<br><small style="color:#555">X-Trail</small></div>
+        <div class="wf-col">Год ▾<br><small style="color:#555">2023</small></div>
+        <div class="wf-col">Кузов ▾<br><small style="color:#555">Wagon</small></div>
+        <div class="wf-col accent">🔍 Найти фаркоп</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Hero Banner -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="hero">
+    <div class="wf-header">
+      <span>4. Hero Banner</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-img" style="height:90px; background: linear-gradient(135deg, #111 60%, #1a1200 100%);">
+        <div style="text-align:center">
+          <div style="font-size:22px; font-weight:900; color:#f59e0b; letter-spacing:-1px">ФАРКОПЫ ПОД ЛЮБОЕ АВТО</div>
+          <div style="font-size:12px; color:#888; margin-top:4px">Продажа · Установка · Гарантия · Сертификат</div>
+          <div style="margin-top:8px">
+            <span style="background:#f59e0b; color:#000; padding:4px 14px; border-radius:3px; font-size:11px; font-weight:700">СМОТРЕТЬ КАТАЛОГ</span>
+          </div>
+        </div>
+      </div>
+      <div class="wf-desc">Большое фоновое фото (авто сзади с фаркопом). Справа — список услуг.</div>
+    </div>
+  </div>
+
+  <!-- 5. Trust Icons -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="trust">
+    <div class="wf-header">
+      <span>5. Преимущества / Доверие</span>
+      <span class="tag trust">TRUST</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col">🔧<br>Профустановка</div>
+        <div class="wf-col">📋<br>Документы / ТО</div>
+        <div class="wf-col">✅<br>Гарантия 2 года</div>
+        <div class="wf-col">🚗<br>500+ авто в базе</div>
+        <div class="wf-col">📍<br>Выезд на установку</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Популярные категории -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="categories">
+    <div class="wf-header">
+      <span>6. Популярные категории / Бренды</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-label">Фаркопы по типу / бренду</div>
+      <div class="wf-cols" style="margin-top:8px">
+        <div class="wf-col">
+          <div class="wf-img" style="height:60px">📸 фото</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc">Фланцевые</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img" style="height:60px">📸 фото</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc">Съёмные</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img" style="height:60px">📸 фото</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc">Вертикальные</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img" style="height:60px">📸 фото</div>
+          <div style="margin-top:6px; font-size:12px; color:#ccc">Электрика</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Популярные авто SEO -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="popular-cars">
+    <div class="wf-header">
+      <span>7. Популярные авто (SEO)</span>
+      <span class="tag seo">SEO</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-label">Часто ищут фаркоп для:</div>
+      <div class="wf-cols" style="margin-top:8px; flex-wrap:wrap; gap:6px">
+        <div class="wf-pill">Toyota RAV4</div>
+        <div class="wf-pill">Kia Sportage</div>
+        <div class="wf-pill">Hyundai Tucson</div>
+        <div class="wf-pill">Volkswagen Tiguan</div>
+        <div class="wf-pill">Skoda Kodiaq</div>
+        <div class="wf-pill">Nissan X-Trail</div>
+        <div class="wf-pill">Lada Vesta</div>
+        <div class="wf-pill">+ещё</div>
+      </div>
+      <div class="wf-desc">Каждый чип — ссылка на /cars/[carSlug]. SEO-трафик.</div>
+    </div>
+  </div>
+
+  <!-- 8. CTA Установка -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="cta-install">
+    <div class="wf-header">
+      <span>8. CTA — Запись на установку</span>
+      <span class="tag key">КОНВЕРСИЯ</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col" style="flex:2; text-align:left">
+          <div class="wf-label">Привезём и установим</div>
+          <div style="font-size:12px; color:#666; margin-top:4px">Профессиональный монтаж за 1–2 часа. Оформляем документы.</div>
+        </div>
+        <div class="wf-col accent" style="max-width:160px">
+          Записаться →
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Блог / FAQ -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="blog">
+    <div class="wf-header">
+      <span>9. Блог / Полезное</span>
+      <span class="tag seo">SEO</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col">
+          <div class="wf-img" style="height:40px">📰</div>
+          <div style="margin-top:6px; font-size:11px; color:#aaa">Как выбрать фаркоп</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img" style="height:40px">📰</div>
+          <div style="margin-top:6px; font-size:11px; color:#aaa">Типы фаркопов</div>
+        </div>
+        <div class="wf-col">
+          <div class="wf-img" style="height:40px">📰</div>
+          <div style="margin-top:6px; font-size:11px; color:#aaa">Нужна ли электрика</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Footer -->
+  <div class="wf-section" onclick="toggleSelect(this)" data-choice="footer">
+    <div class="wf-header">
+      <span>10. Footer</span>
+    </div>
+    <div class="wf-body">
+      <div class="wf-cols">
+        <div class="wf-col" style="text-align:left">
+          <strong style="color:#f59e0b">AUTOPROFI</strong><br>
+          <small style="color:#555">Адрес<br>Телефон<br>Email</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777">Каталог<br>По маркам<br>Электрика</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777">Установка<br>О нас<br>FAQ<br>Блог</small>
+        </div>
+        <div class="wf-col" style="text-align:left">
+          <small style="color:#777">Доставка<br>Гарантия<br>Контакты</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
