@@ -35,9 +35,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Specs (only if towbar) */}
-        {(product.hookType !== null || product.towLoad !== null) && (
+        {(!!product.hookType || product.towLoad !== null) && (
           <div className="flex flex-col gap-1.5 font-ui text-xs border-t border-border pt-3">
-            {product.hookType !== null && (
+            {!!product.hookType && (
               <div className="flex justify-between gap-2">
                 <span className="text-text-muted">Тип крюка</span>
                 <span className="text-white">{product.hookType}</span>

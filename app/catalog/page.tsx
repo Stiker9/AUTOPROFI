@@ -58,7 +58,7 @@ export default async function CatalogPage({
   // Derive filter options from ALL products (not filtered)
   const hookTypes = [
     ...new Set(
-      allProducts.map((p) => p.hookType).filter((v): v is string => v !== null)
+      allProducts.map((p) => p.hookType).filter((v): v is string => !!v)
     ),
   ].sort();
   const bumperCuts = [

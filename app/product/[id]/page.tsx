@@ -50,13 +50,13 @@ export default async function ProductPage({
     },
   };
 
-  const isTowbar = product.hookType !== null;
+  const isTowbar = product.towLoad !== null;
 
   const specRows: Array<{ label: string; value: string | null }> = isTowbar
     ? [
         { label: "Артикул", value: product.sku },
         { label: "Бренд", value: product.brand },
-        { label: "Тип крюка", value: product.hookType },
+        { label: "Тип крюка", value: product.hookType || null },
         {
           label: "Макс. нагрузка на шар",
           value: product.towLoad !== null ? `${product.towLoad} кг` : null,
