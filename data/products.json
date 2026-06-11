@@ -783,7 +783,7 @@
     "inStock": true,
     "image": "/images/products/steinhof-b-098.jpg",
     "fitsCars": [
-      "bmw-x3-xdrive-f25-2010",
+      "bmw-x3-f25-2010",
       "bmw-x3-g01-2017"
     ],
     "universal": false
@@ -919,7 +919,7 @@
     "image": "/images/products/b207-e.jpg",
     "fitsCars": [
       "bmw-x6-g06-2019",
-      "bmw-x7-e-1500-100-g07-2019"
+      "bmw-x7-g07-2019"
     ],
     "universal": false
   },
@@ -939,7 +939,7 @@
     "image": "/images/products/oris-4758-a.jpg",
     "fitsCars": [
       "bmw-x3-g01-2017",
-      "bmw-x4-a-2455-100-g02-2018"
+      "bmw-x4-g02-2018"
     ],
     "universal": false
   },
@@ -978,7 +978,7 @@
     "inStock": true,
     "image": "/images/products/oris-4753-a.jpg",
     "fitsCars": [
-      "bmw-x1-a-1500-50-2009"
+      "bmw-x1-2009"
     ],
     "universal": false
   },
@@ -997,7 +997,7 @@
     "inStock": true,
     "image": "/images/products/oris-4752-a.jpg",
     "fitsCars": [
-      "bmw-x6-a-1500-50-2008"
+      "bmw-x6-2008"
     ],
     "universal": false
   },
@@ -1038,7 +1038,7 @@
     "fitsCars": [
       "bmw-x5-g05-2018",
       "bmw-x7-g07-2019",
-      "bmw-x6-a-g06-2019"
+      "bmw-x6-g06-2019"
     ],
     "universal": false
   },
@@ -1059,7 +1059,7 @@
     "fitsCars": [
       "bmw-x5-g05-2018",
       "bmw-x7-g07-2019",
-      "bmw-x6-d2-g06-2019"
+      "bmw-x6-g06-2019"
     ],
     "universal": false
   },
@@ -1120,7 +1120,7 @@
     "image": "/images/products/oris-4756-d2.jpg",
     "fitsCars": [
       "bmw-x3-f25-2010",
-      "bmw-x4-d2-f26-2014"
+      "bmw-x4-f26-2014"
     ],
     "universal": false
   },
@@ -1158,7 +1158,7 @@
     "inStock": true,
     "image": "/images/products/pt-group-ptav0015.jpg",
     "fitsCars": [
-      "bmw-x3-c-av-2025"
+      "bmw-x3-c-2025"
     ],
     "universal": false
   },
@@ -1179,7 +1179,7 @@
     "fitsCars": [
       "bmw-x5-g05-2018",
       "bmw-x6-g06-2019",
-      "bmw-x7-ea-e-g07-2019"
+      "bmw-x7-g07-2019"
     ],
     "universal": false
   },
@@ -1199,7 +1199,7 @@
     "image": "/images/products/avtos-bm-03.jpg",
     "fitsCars": [
       "bmw-x3-f25-2010",
-      "bmw-x4-a-2500-f26-2014"
+      "bmw-x4-f26-2014"
     ],
     "universal": false
   },
@@ -1218,7 +1218,7 @@
     "inStock": true,
     "image": "/images/products/avtos-bm-02.jpg",
     "fitsCars": [
-      "bmw-x5-a-2500-125-e70-2007"
+      "bmw-x5-e70-2007"
     ],
     "universal": false
   },
@@ -1237,7 +1237,7 @@
     "inStock": true,
     "image": "/images/products/avtos-bm-04.jpg",
     "fitsCars": [
-      "bmw-x1-a-1600-75-e84-2009"
+      "bmw-x1-e84-2009"
     ],
     "universal": false
   },
