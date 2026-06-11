@@ -115,7 +115,7 @@ export default async function CarPage({
 
                   {/* Specs */}
                   <div className="flex flex-col gap-2 font-ui text-sm">
-                    {product.hookType !== null && (
+                    {!!product.hookType && (
                       <div className="flex justify-between gap-2">
                         <span className="text-text-muted">Тип крюка:</span>
                         <span className="text-white text-right">
@@ -125,9 +125,25 @@ export default async function CarPage({
                     )}
                     {product.towLoad !== null && (
                       <div className="flex justify-between gap-2">
-                        <span className="text-text-muted">Нагр. на шар:</span>
+                        <span className="text-text-muted">Тяговая нагрузка:</span>
                         <span className="text-white text-right">
                           {product.towLoad} кг
+                        </span>
+                      </div>
+                    )}
+                    {product.vertLoad !== null && (
+                      <div className="flex justify-between gap-2">
+                        <span className="text-text-muted">Нагрузка на шар:</span>
+                        <span className="text-white text-right">
+                          {product.vertLoad} кг
+                        </span>
+                      </div>
+                    )}
+                    {!!product.bumperCut && (
+                      <div className="flex justify-between gap-2">
+                        <span className="text-text-muted">Вырез в бампере:</span>
+                        <span className="text-white text-right">
+                          {product.bumperCut}
                         </span>
                       </div>
                     )}
