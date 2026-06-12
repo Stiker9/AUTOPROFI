@@ -43,7 +43,7 @@
     "name": "Фаркоп IMIOLA B.A17",
     "brand": "IMIOLA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный)",
     "towLoad": 2400,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -101,7 +101,7 @@
     "name": "Фаркоп GALIA B020A",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (условно-съёмный)",
     "towLoad": 2200,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -110,7 +110,8 @@
     "inStock": true,
     "image": "/images/products/galia-b020a.jpg",
     "fitsCars": [
-      "bmw-5-series-f10-f11-2010"
+      "bmw-5-series-f10-f11-2010",
+      "bmw-5-series-gran-turismo-f07-2010"
     ],
     "universal": false
   },
@@ -120,7 +121,7 @@
     "name": "Фаркоп GALIA B020C",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный)",
     "towLoad": 2200,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -129,7 +130,8 @@
     "inStock": true,
     "image": "/images/products/galia-b020c.jpg",
     "fitsCars": [
-      "bmw-5-series-f10-f11-2010"
+      "bmw-5-series-f10-f11-2010",
+      "bmw-5-series-gran-turismo-f07-2010"
     ],
     "universal": false
   },
@@ -139,7 +141,7 @@
     "name": "Фаркоп GALIA B023C",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный)",
     "towLoad": 2000,
     "vertLoad": 90,
     "bumperCut": "нет",
@@ -148,8 +150,10 @@
     "inStock": true,
     "image": "/images/products/galia-b023c.jpg",
     "fitsCars": [
-      "mini-countryman-2017",
-      "mini-clubman-2015"
+      "bmw-x2-f39-2018",
+      "bmw-x1-f48-2015",
+      "bmw-2-series-active-tourer-f45-2014",
+      "bmw-2-series-gran-tourer-f46-2015"
     ],
     "universal": false
   },
@@ -159,7 +163,7 @@
     "name": "Фаркоп GALIA B021A",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (условно-съёмный)",
     "towLoad": 1900,
     "vertLoad": 75,
     "bumperCut": "да",
@@ -168,7 +172,8 @@
     "inStock": true,
     "image": "/images/products/galia-b021a.jpg",
     "fitsCars": [
-      "bmw-3-series-2011"
+      "bmw-3-series-2011",
+      "bmw-1-series-2011"
     ],
     "universal": false
   },
@@ -178,7 +183,7 @@
     "name": "Фаркоп GALIA B024C",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный)",
     "towLoad": 2200,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -197,7 +202,7 @@
     "name": "Фаркоп GALIA B009A",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (условно-съёмный)",
     "towLoad": 1800,
     "vertLoad": 75,
     "bumperCut": "да",
@@ -273,7 +278,7 @@
     "name": "Фаркоп GALIA B019V",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 2400,
     "vertLoad": 100,
     "bumperCut": "нет",
@@ -293,7 +298,7 @@
     "name": "Фаркоп GALIA B025V",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 1900,
     "vertLoad": 100,
     "bumperCut": "нет",
@@ -302,7 +307,9 @@
     "inStock": true,
     "image": "/images/products/galia-b025v.jpg",
     "fitsCars": [
-      "bmw-3-series-2018"
+      "bmw-3-series-2018",
+      "bmw-4-series-g22-2020",
+      "bmw-4-series-gran-coupe-g26-2021"
     ],
     "universal": false
   },
@@ -312,7 +319,7 @@
     "name": "Фаркоп GALIA B026C",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный)",
     "towLoad": 3500,
     "vertLoad": 140,
     "bumperCut": "да",
@@ -333,7 +340,7 @@
     "name": "Фаркоп GALIA B026V",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 3500,
     "vertLoad": 140,
     "bumperCut": "да",
@@ -354,7 +361,7 @@
     "name": "Фаркоп GALIA B017V",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 3500,
     "vertLoad": 140,
     "bumperCut": "да",
@@ -364,7 +371,8 @@
     "image": "/images/products/galia-b017v.jpg",
     "fitsCars": [
       "bmw-x5-e70-2007",
-      "bmw-x6-2-f16-2014"
+      "bmw-x5-f15-2013",
+      "bmw-x6-f16-2014"
     ],
     "universal": false
   },
@@ -374,7 +382,7 @@
     "name": "Фаркоп GALIA B024V",
     "brand": "GALIA",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 2200,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -412,7 +420,7 @@
     "name": "Фаркоп Steinhof B-065",
     "brand": "Steinhof",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 2200,
     "vertLoad": 100,
     "bumperCut": "да",
@@ -431,7 +439,7 @@
     "name": "Фаркоп Steinhof B-081",
     "brand": "Steinhof",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 1700,
     "vertLoad": 80,
     "bumperCut": "нет",
@@ -441,7 +449,8 @@
     "image": "/images/products/steinhof-b-081.jpg",
     "fitsCars": [
       "bmw-x1-f48-2015",
-      "bmw-2-series-active-tourer-f45-2014"
+      "bmw-2-series-active-tourer-f45-2014",
+      "bmw-2-series-gran-tourer-f46-2015"
     ],
     "universal": false
   },
@@ -451,7 +460,7 @@
     "name": "Фаркоп Steinhof B-083",
     "brand": "Steinhof",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "V (быстросъёмный вертикальный)",
     "towLoad": 2200,
     "vertLoad": 120,
     "bumperCut": "да",
@@ -460,7 +469,9 @@
     "inStock": true,
     "image": "/images/products/steinhof-b-083.jpg",
     "fitsCars": [
-      "bmw-5-series-g30-g31-2017"
+      "bmw-5-series-g30-g31-2017",
+      "bmw-6-series-gran-turismo-g32-2017",
+      "bmw-7-series-g11-g12-2015"
     ],
     "universal": false
   },
@@ -497,25 +508,6 @@
     "price": 19690,
     "inStock": true,
     "image": "/images/products/steinhof-b-086.jpg",
-    "fitsCars": [
-      "bmw-x2-f39-2018"
-    ],
-    "universal": false
-  },
-  {
-    "id": "steinhof-b-087",
-    "sku": "B-087",
-    "name": "Фаркоп Steinhof B-087",
-    "brand": "Steinhof",
-    "category": "towbars",
-    "hookType": "V (быстросъёмный вертикальный)",
-    "towLoad": 2200,
-    "vertLoad": 100,
-    "bumperCut": "да",
-    "electricsIncluded": false,
-    "price": 46990,
-    "inStock": true,
-    "image": "/images/products/steinhof-b-087.jpg",
     "fitsCars": [
       "bmw-x2-f39-2018"
     ],
@@ -655,21 +647,43 @@
     "universal": false
   },
   {
-    "id": "steinhof-b-064",
-    "sku": "B-064",
-    "name": "Фаркоп Steinhof B-064",
+    "id": "steinhof-b-045",
+    "sku": "B-045",
+    "name": "Фаркоп Steinhof B-045",
     "brand": "Steinhof",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (условно-съёмный)",
+    "towLoad": 1900,
+    "vertLoad": 80,
+    "bumperCut": "да",
+    "electricsIncluded": false,
+    "price": 18990,
+    "inStock": true,
+    "image": "/images/products/steinhof-b-045.jpg",
+    "fitsCars": [
+      "bmw-3-series-e90-2005",
+      "bmw-3-series-e91-2005",
+      "bmw-1-series-e81-e87-2004",
+      "bmw-1-series-e82-2007"
+    ],
+    "universal": false
+  },
+  {
+    "id": "steinhof-b-055",
+    "sku": "B-055",
+    "name": "Фаркоп Steinhof B-055",
+    "brand": "Steinhof",
+    "category": "towbars",
+    "hookType": "A (условно-съёмный)",
     "towLoad": 2200,
-    "vertLoad": 100,
+    "vertLoad": 90,
     "bumperCut": "да",
     "electricsIncluded": false,
     "price": 19990,
     "inStock": true,
-    "image": "/images/products/steinhof-b-064.jpg",
+    "image": "/images/products/steinhof-b-055.jpg",
     "fitsCars": [
-      "bmw-5-series-20-f10-f11-2010"
+      "bmw-5-series-e60-e61-2003"
     ],
     "universal": false
   },
@@ -774,7 +788,7 @@
     "name": "Фаркоп Steinhof B-098",
     "brand": "Steinhof",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (условно-съёмный)",
     "towLoad": 2500,
     "vertLoad": 120,
     "bumperCut": "нет",
@@ -784,7 +798,9 @@
     "image": "/images/products/steinhof-b-098.jpg",
     "fitsCars": [
       "bmw-x3-f25-2010",
-      "bmw-x3-g01-2017"
+      "bmw-x3-g01-2017",
+      "bmw-x4-f26-2014",
+      "bmw-x4-g02-2018"
     ],
     "universal": false
   },
@@ -880,7 +896,7 @@
     "inStock": true,
     "image": "/images/products/b203-ae.jpg",
     "fitsCars": [
-      "bmw-x5-ae-e53-2000"
+      "bmw-x5-e53-2000"
     ],
     "universal": false
   },
@@ -959,7 +975,8 @@
     "image": "/images/products/oris-4757-a.jpg",
     "fitsCars": [
       "bmw-x1-f48-2015",
-      "bmw-2-series-active-tourer-f45-2014"
+      "bmw-2-series-active-tourer-f45-2014",
+      "bmw-2-series-gran-tourer-f46-2015"
     ],
     "universal": false
   },
@@ -1017,6 +1034,7 @@
     "image": "/images/products/oris-4750-an.jpg",
     "fitsCars": [
       "bmw-x5-e70-2007",
+      "bmw-x5-f15-2013",
       "bmw-x6-f16-2014"
     ],
     "universal": false
@@ -1079,6 +1097,7 @@
     "image": "/images/products/oris-4755-d2.jpg",
     "fitsCars": [
       "bmw-x5-e70-2007",
+      "bmw-x5-f15-2013",
       "bmw-x6-f16-2014"
     ],
     "universal": false
@@ -1130,7 +1149,7 @@
     "name": "Фаркоп Бизон FA 0280-E",
     "brand": "Бизон",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "под квадрат (съёмный)",
     "towLoad": null,
     "vertLoad": 70,
     "bumperCut": "нет",
@@ -1140,6 +1159,27 @@
     "image": "/images/products/fa-0280-e.jpg",
     "fitsCars": [
       "bmw-i3-2013"
+    ],
+    "universal": false
+  },
+  {
+    "id": "pt-group-bxs-19-991422-00",
+    "sku": "BXS-19-991422.00",
+    "name": "Фаркоп PT GROUP BXS-19-991422.00",
+    "brand": "PT GROUP",
+    "category": "towbars",
+    "hookType": "",
+    "towLoad": 2000,
+    "vertLoad": 120,
+    "bumperCut": "да",
+    "electricsIncluded": false,
+    "price": 54700,
+    "inStock": true,
+    "image": "/images/products/pt-group-bxs-19-991422-00.jpg",
+    "fitsCars": [
+      "bmw-x5-g05-2018",
+      "bmw-x7-g07-2019",
+      "bmw-x6-g06-2019"
     ],
     "universal": false
   },
@@ -1158,7 +1198,7 @@
     "inStock": true,
     "image": "/images/products/pt-group-ptav0015.jpg",
     "fitsCars": [
-      "bmw-x3-c-2025"
+      "bmw-x3-2025"
     ],
     "universal": false
   },
@@ -1200,6 +1240,25 @@
     "fitsCars": [
       "bmw-x3-f25-2010",
       "bmw-x4-f26-2014"
+    ],
+    "universal": false
+  },
+  {
+    "id": "avtos-bm-01",
+    "sku": "BM 01",
+    "name": "Фаркоп AvtoS BM 01",
+    "brand": "AvtoS",
+    "category": "towbars",
+    "hookType": "",
+    "towLoad": null,
+    "vertLoad": null,
+    "bumperCut": null,
+    "electricsIncluded": false,
+    "price": 13070,
+    "inStock": true,
+    "image": "/images/products/avtos-bm-01.jpg",
+    "fitsCars": [
+      "bmw-x5-e53-2000"
     ],
     "universal": false
   },
@@ -1247,7 +1306,7 @@
     "name": "Фаркоп Sheriff 3939.12",
     "brand": "Sheriff",
     "category": "towbars",
-    "hookType": "",
+    "hookType": "A (съёмный)",
     "towLoad": 2000,
     "vertLoad": 75,
     "bumperCut": "нет",
@@ -1256,7 +1315,8 @@
     "inStock": true,
     "image": "/images/products/sheriff-3939-12.jpg",
     "fitsCars": [
-      "bmw-x3-f25-2010"
+      "bmw-x3-f25-2010",
+      "bmw-x4-f26-2014"
     ],
     "universal": false
   }

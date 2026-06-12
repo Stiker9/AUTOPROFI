@@ -68,79 +68,123 @@
   {
     "slug": "bmw-5-series-f10-f11-2010",
     "brand": "BMW",
-    "model": "5-Series седан/универсал",
+    "model": "5-Series",
     "generation": "F10/F11",
     "body": "",
     "yearFrom": 2010,
     "yearTo": 2016,
     "popular": false,
-    "title": "Фаркоп для BMW 5-Series седан/универсал F10/F11 (2010–2016)"
+    "title": "Фаркоп для BMW 5-Series F10/F11 (2010–2016)"
   },
   {
-    "slug": "mini-countryman-2017",
-    "brand": "MINI",
-    "model": "Countryman",
-    "generation": "",
+    "slug": "bmw-5-series-gran-turismo-f07-2010",
+    "brand": "BMW",
+    "model": "5-Series Gran Turismo",
+    "generation": "F07",
     "body": "",
-    "yearFrom": 2017,
+    "yearFrom": 2010,
+    "yearTo": 2017,
+    "popular": false,
+    "title": "Фаркоп для BMW 5-Series Gran Turismo F07 (2010–2017)"
+  },
+  {
+    "slug": "bmw-x2-f39-2018",
+    "brand": "BMW",
+    "model": "X2",
+    "generation": "F39",
+    "body": "",
+    "yearFrom": 2018,
     "yearTo": 2024,
     "popular": false,
-    "title": "Фаркоп для MINI Countryman (2017–2024)"
+    "title": "Фаркоп для BMW X2 F39 (2018–2024)"
   },
   {
-    "slug": "mini-clubman-2015",
-    "brand": "MINI",
-    "model": "Clubman",
-    "generation": "",
+    "slug": "bmw-x1-f48-2015",
+    "brand": "BMW",
+    "model": "X1",
+    "generation": "F48",
     "body": "",
     "yearFrom": 2015,
-    "yearTo": 2024,
+    "yearTo": 2022,
     "popular": false,
-    "title": "Фаркоп для MINI Clubman (2015–2024)"
+    "title": "Фаркоп для BMW X1 F48 (2015–2022)"
+  },
+  {
+    "slug": "bmw-2-series-active-tourer-f45-2014",
+    "brand": "BMW",
+    "model": "2-Series Active Tourer",
+    "generation": "F45",
+    "body": "",
+    "yearFrom": 2014,
+    "yearTo": 2021,
+    "popular": false,
+    "title": "Фаркоп для BMW 2-Series Active Tourer F45 (2014–2021)"
+  },
+  {
+    "slug": "bmw-2-series-gran-tourer-f46-2015",
+    "brand": "BMW",
+    "model": "2-Series Gran Tourer",
+    "generation": "F46",
+    "body": "",
+    "yearFrom": 2015,
+    "yearTo": 2021,
+    "popular": false,
+    "title": "Фаркоп для BMW 2-Series Gran Tourer F46 (2015–2021)"
   },
   {
     "slug": "bmw-3-series-2011",
     "brand": "BMW",
-    "model": "3-Series седан/универсал",
+    "model": "3-Series",
     "generation": "",
     "body": "",
     "yearFrom": 2011,
     "yearTo": 2018,
     "popular": false,
-    "title": "Фаркоп для BMW 3-Series седан/универсал (2011–2018)"
+    "title": "Фаркоп для BMW 3-Series (2011–2018)"
+  },
+  {
+    "slug": "bmw-1-series-2011",
+    "brand": "BMW",
+    "model": "1-Series",
+    "generation": "",
+    "body": "",
+    "yearFrom": 2011,
+    "yearTo": 2019,
+    "popular": false,
+    "title": "Фаркоп для BMW 1-Series (2011–2019)"
   },
   {
     "slug": "bmw-5-series-g30-g31-2016",
     "brand": "BMW",
-    "model": "5-Series седан/универсал",
+    "model": "5-Series",
     "generation": "G30/G31",
     "body": "",
     "yearFrom": 2016,
     "yearTo": 2023,
     "popular": false,
-    "title": "Фаркоп для BMW 5-Series седан/универсал G30/G31 (2016–2023)"
+    "title": "Фаркоп для BMW 5-Series G30/G31 (2016–2023)"
   },
   {
     "slug": "bmw-3-series-e46-1998",
     "brand": "BMW",
-    "model": "3-Series седан/универсал/купе",
+    "model": "3-Series",
     "generation": "E46",
     "body": "",
     "yearFrom": 1998,
     "yearTo": 2005,
     "popular": false,
-    "title": "Фаркоп для BMW 3-Series седан/универсал/купе E46 (1998–2005)"
+    "title": "Фаркоп для BMW 3-Series E46 (1998–2005)"
   },
   {
     "slug": "bmw-5-series-e39-1996",
     "brand": "BMW",
-    "model": "5-Series седан",
+    "model": "5-Series",
     "generation": "E39",
     "body": "",
     "yearFrom": 1996,
     "yearTo": 2003,
     "popular": false,
-    "title": "Фаркоп для BMW 5-Series седан E39 (1996–2003)"
+    "title": "Фаркоп для BMW 5-Series E39 (1996–2003)"
   },
   {
     "slug": "bmw-3-series-gran-turismo-f34-2013",
@@ -156,13 +200,35 @@
   {
     "slug": "bmw-3-series-2018",
     "brand": "BMW",
-    "model": "3-Series седан/универсал",
+    "model": "3-Series",
     "generation": "",
     "body": "",
     "yearFrom": 2018,
     "yearTo": null,
     "popular": false,
-    "title": "Фаркоп для BMW 3-Series седан/универсал (2018 – н.в.)"
+    "title": "Фаркоп для BMW 3-Series (2018 – н.в.)"
+  },
+  {
+    "slug": "bmw-4-series-g22-2020",
+    "brand": "BMW",
+    "model": "4-Series",
+    "generation": "G22",
+    "body": "",
+    "yearFrom": 2020,
+    "yearTo": null,
+    "popular": false,
+    "title": "Фаркоп для BMW 4-Series G22 (2020 – н.в.)"
+  },
+  {
+    "slug": "bmw-4-series-gran-coupe-g26-2021",
+    "brand": "BMW",
+    "model": "4-Series Gran Coupe",
+    "generation": "G26",
+    "body": "",
+    "yearFrom": 2021,
+    "yearTo": null,
+    "popular": false,
+    "title": "Фаркоп для BMW 4-Series Gran Coupe G26 (2021 – н.в.)"
   },
   {
     "slug": "bmw-x5-g05-2018",
@@ -198,70 +264,70 @@
     "title": "Фаркоп для BMW X5 E70 (2007–2013)"
   },
   {
-    "slug": "bmw-x6-2-f16-2014",
+    "slug": "bmw-x5-f15-2013",
+    "brand": "BMW",
+    "model": "X5",
+    "generation": "F15",
+    "body": "",
+    "yearFrom": 2013,
+    "yearTo": 2018,
+    "popular": false,
+    "title": "Фаркоп для BMW X5 F15 (2013–2018)"
+  },
+  {
+    "slug": "bmw-x6-f16-2014",
     "brand": "BMW",
     "model": "X6",
     "generation": "F16",
     "body": "",
     "yearFrom": 2014,
-    "yearTo": null,
+    "yearTo": 2019,
     "popular": false,
-    "title": "Фаркоп для BMW X6 F16 (2014 – н.в.)"
-  },
-  {
-    "slug": "bmw-x1-f48-2015",
-    "brand": "BMW",
-    "model": "X1",
-    "generation": "F48",
-    "body": "",
-    "yearFrom": 2015,
-    "yearTo": 2022,
-    "popular": false,
-    "title": "Фаркоп для BMW X1 F48 (2015–2022)"
-  },
-  {
-    "slug": "bmw-2-series-active-tourer-f45-2014",
-    "brand": "BMW",
-    "model": "2-Series Active Tourer",
-    "generation": "F45",
-    "body": "",
-    "yearFrom": 2014,
-    "yearTo": 2021,
-    "popular": false,
-    "title": "Фаркоп для BMW 2-Series Active Tourer F45 (2014–2021)"
+    "title": "Фаркоп для BMW X6 F16 (2014–2019)"
   },
   {
     "slug": "bmw-5-series-g30-g31-2017",
     "brand": "BMW",
-    "model": "5-Series седан/универсал",
+    "model": "5-Series",
     "generation": "G30/G31",
     "body": "",
     "yearFrom": 2017,
     "yearTo": 2023,
     "popular": false,
-    "title": "Фаркоп для BMW 5-Series седан/универсал G30/G31 (2017–2023)"
+    "title": "Фаркоп для BMW 5-Series G30/G31 (2017–2023)"
   },
   {
-    "slug": "bmw-x2-f39-2018",
+    "slug": "bmw-6-series-gran-turismo-g32-2017",
     "brand": "BMW",
-    "model": "X2",
-    "generation": "F39",
+    "model": "6-Series Gran Turismo",
+    "generation": "G32",
     "body": "",
-    "yearFrom": 2018,
-    "yearTo": 2024,
+    "yearFrom": 2017,
+    "yearTo": 2023,
     "popular": false,
-    "title": "Фаркоп для BMW X2 F39 (2018–2024)"
+    "title": "Фаркоп для BMW 6-Series Gran Turismo G32 (2017–2023)"
+  },
+  {
+    "slug": "bmw-7-series-g11-g12-2015",
+    "brand": "BMW",
+    "model": "7-Series",
+    "generation": "G11/G12",
+    "body": "",
+    "yearFrom": 2015,
+    "yearTo": 2022,
+    "popular": false,
+    "title": "Фаркоп для BMW 7-Series G11/G12 (2015–2022)"
   },
   {
     "slug": "bmw-3-series-g20-2018",
     "brand": "BMW",
-    "model": "3-Series седан",
+    "model": "3-Series",
     "generation": "G20",
     "body": "",
     "yearFrom": 2018,
     "yearTo": null,
     "popular": false,
-    "title": "Фаркоп для BMW 3-Series седан G20 (2018 – н.в.)"
+    "title": "Фаркоп для BMW 3-Series G20 (2018 – н.в.)"
   },
   {
     "slug": "bmw-7-series-e65-e66-2005",
@@ -297,15 +363,59 @@
     "title": "Фаркоп для BMW X6 E71 (2008–2014)"
   },
   {
-    "slug": "bmw-5-series-20-f10-f11-2010",
+    "slug": "bmw-3-series-e90-2005",
     "brand": "BMW",
-    "model": "5-Series седан/универсал",
-    "generation": "F10/F11",
+    "model": "3-Series",
+    "generation": "E90",
     "body": "",
-    "yearFrom": 2010,
-    "yearTo": null,
+    "yearFrom": 2005,
+    "yearTo": 2012,
     "popular": false,
-    "title": "Фаркоп для BMW 5-Series седан/универсал F10/F11 (2010 – н.в.)"
+    "title": "Фаркоп для BMW 3-Series E90 (2005–2012)"
+  },
+  {
+    "slug": "bmw-3-series-e91-2005",
+    "brand": "BMW",
+    "model": "3-Series",
+    "generation": "E91",
+    "body": "",
+    "yearFrom": 2005,
+    "yearTo": 2013,
+    "popular": false,
+    "title": "Фаркоп для BMW 3-Series E91 (2005–2013)"
+  },
+  {
+    "slug": "bmw-1-series-e81-e87-2004",
+    "brand": "BMW",
+    "model": "1-Series",
+    "generation": "E81/E87",
+    "body": "",
+    "yearFrom": 2004,
+    "yearTo": 2011,
+    "popular": false,
+    "title": "Фаркоп для BMW 1-Series E81/E87 (2004–2011)"
+  },
+  {
+    "slug": "bmw-1-series-e82-2007",
+    "brand": "BMW",
+    "model": "1-Series",
+    "generation": "E82",
+    "body": "",
+    "yearFrom": 2007,
+    "yearTo": 2011,
+    "popular": false,
+    "title": "Фаркоп для BMW 1-Series E82 (2007–2011)"
+  },
+  {
+    "slug": "bmw-5-series-e60-e61-2003",
+    "brand": "BMW",
+    "model": "5-Series",
+    "generation": "E60/E61",
+    "body": "",
+    "yearFrom": 2003,
+    "yearTo": 2010,
+    "popular": false,
+    "title": "Фаркоп для BMW 5-Series E60/E61 (2003–2010)"
   },
   {
     "slug": "bmw-5-series-gran-turismo-f07-2009",
@@ -321,13 +431,13 @@
   {
     "slug": "bmw-7-series-e38-1994",
     "brand": "BMW",
-    "model": "7-Series седан",
+    "model": "7-Series",
     "generation": "E38",
     "body": "",
     "yearFrom": 1994,
     "yearTo": 2001,
     "popular": false,
-    "title": "Фаркоп для BMW 7-Series седан E38 (1994–2001)"
+    "title": "Фаркоп для BMW 7-Series E38 (1994–2001)"
   },
   {
     "slug": "bmw-x3-g01-2017",
@@ -341,10 +451,21 @@
     "title": "Фаркоп для BMW X3 G01 (2017–2024)"
   },
   {
+    "slug": "bmw-x4-g02-2018",
+    "brand": "BMW",
+    "model": "X4",
+    "generation": "G02",
+    "body": "",
+    "yearFrom": 2018,
+    "yearTo": null,
+    "popular": false,
+    "title": "Фаркоп для BMW X4 G02 (2018 – н.в.)"
+  },
+  {
     "slug": "bmw-ix-i20-2021",
     "brand": "BMW",
-    "model": "iX I20",
-    "generation": "",
+    "model": "iX",
+    "generation": "I20",
     "body": "",
     "yearFrom": 2021,
     "yearTo": null,
@@ -363,7 +484,7 @@
     "title": "Фаркоп для BMW X3 (2004–2010)"
   },
   {
-    "slug": "bmw-x5-ae-e53-2000",
+    "slug": "bmw-x5-e53-2000",
     "brand": "BMW",
     "model": "X5",
     "generation": "E53",
@@ -372,17 +493,6 @@
     "yearTo": 2007,
     "popular": false,
     "title": "Фаркоп для BMW X5 E53 (2000–2007)"
-  },
-  {
-    "slug": "bmw-x4-g02-2018",
-    "brand": "BMW",
-    "model": "X4",
-    "generation": "G02",
-    "body": "",
-    "yearFrom": 2018,
-    "yearTo": null,
-    "popular": false,
-    "title": "Фаркоп для BMW X4 G02 (2018 – н.в.)"
   },
   {
     "slug": "bmw-x1-2009",
@@ -407,17 +517,6 @@
     "title": "Фаркоп для BMW X6 (2008–2014)"
   },
   {
-    "slug": "bmw-x6-f16-2014",
-    "brand": "BMW",
-    "model": "X6",
-    "generation": "F16",
-    "body": "",
-    "yearFrom": 2014,
-    "yearTo": 2019,
-    "popular": false,
-    "title": "Фаркоп для BMW X6 F16 (2014–2019)"
-  },
-  {
     "slug": "bmw-x3-g45-g48-2024",
     "brand": "BMW",
     "model": "X3",
@@ -440,7 +539,7 @@
     "title": "Фаркоп для BMW i3 (2013–2022)"
   },
   {
-    "slug": "bmw-x3-c-2025",
+    "slug": "bmw-x3-2025",
     "brand": "BMW",
     "model": "X3",
     "generation": "",
