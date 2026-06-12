@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   getMakes,
@@ -14,37 +14,32 @@ interface CarSelectorProps {
   initialModel?: string;
 }
 
+function matchSlug(displayName: string, slug: string): boolean {
+  return displayName.toLowerCase().replace(/\s+/g, "-") === slug.toLowerCase();
+}
+
 export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
   const router = useRouter();
 
   const makes = getMakes();
 
-  const [make, setMake] = useState("");
-  const [model, setModel] = useState("");
+  const [make, setMake] = useState(() => {
+    if (!initialMake) return "";
+    return getMakes().find((m) => matchSlug(m, initialMake)) ?? "";
+  });
+
+  const [model, setModel] = useState(() => {
+    if (!initialMake || !initialModel) return "";
+    const foundMake = getMakes().find((m) => matchSlug(m, initialMake));
+    if (!foundMake) return "";
+    return getModelsByMake(foundMake).find((m) => matchSlug(m, initialModel)) ?? "";
+  });
+
   const [year, setYear] = useState<number | "">("");
   const [error, setError] = useState("");
 
   const models = make ? getModelsByMake(make) : [];
   const years = make && model ? getYearsByMakeModel(make, model) : [];
-
-  // Pre-fill from URL params (slugs → display names)
-  useEffect(() => {
-    if (initialMake) {
-      const foundMake = makes.find(
-        (m) => m.toLowerCase().replace(/\s+/g, "-") === initialMake.toLowerCase()
-      );
-      if (foundMake) {
-        setMake(foundMake);
-        if (initialModel) {
-          const foundModels = getModelsByMake(foundMake);
-          const foundModel = foundModels.find(
-            (m) => m.toLowerCase().replace(/\s+/g, "-") === initialModel.toLowerCase()
-          );
-          if (foundModel) setModel(foundModel);
-        }
-      }
-    }
-  }, [initialMake, initialModel]);
 
   function handleSearch() {
     setError("");
