@@ -54,6 +54,10 @@ export function getGenerationByMakeModelYear(
   });
 }
 
+export function getBodyOptionsByMakeModel(brand: string, model: string): Car[] {
+  return cars.filter((c) => c.brand === brand && c.model === model);
+}
+
 export function getPopularCars(limit = 10): Car[] {
   const popular = cars.filter((c) => c.popular);
   return (popular.length > 0 ? popular : cars).slice(0, limit);

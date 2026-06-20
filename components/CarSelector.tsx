@@ -2,20 +2,22 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  getMakes,
-  getModelsByMake,
-  getYearsByMakeModel,
-  getGenerationByMakeModelYear,
-} from "@/lib/data";
+import { getMakes, getModelsByMake, getBodyOptionsByMakeModel } from "@/lib/data";
+import type { Car } from "@/types";
 
-interface CarSelectorProps {
-  initialMake?: string;
-  initialModel?: string;
+function formatBodyLabel(car: Car): string {
+  const yearTo = car.yearTo ?? "н.в.";
+  const years = `${car.yearFrom}–${yearTo}`;
+  return car.generation ? `${car.generation} (${years})` : `(${years})`;
 }
 
 function matchSlug(displayName: string, slug: string): boolean {
   return displayName.toLowerCase().replace(/\s+/g, "-") === slug.toLowerCase();
+}
+
+interface CarSelectorProps {
+  initialMake?: string;
+  initialModel?: string;
 }
 
 export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
@@ -35,21 +37,15 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
     return getModelsByMake(foundMake).find((m) => matchSlug(m, initialModel)) ?? "";
   });
 
-  const [year, setYear] = useState<number | "">("");
+  const [carSlug, setCarSlug] = useState("");
   const [error, setError] = useState("");
 
   const models = make ? getModelsByMake(make) : [];
-  const years = make && model ? getYearsByMakeModel(make, model) : [];
+  const bodyOptions = make && model ? getBodyOptionsByMakeModel(make, model) : [];
 
   function handleSearch() {
-    setError("");
-    if (!make || !model || !year) return;
-    const car = getGenerationByMakeModelYear(make, model, Number(year));
-    if (car) {
-      router.push(`/cars/${car.slug}`);
-    } else {
-      setError("Не найдено. Проверьте год выпуска.");
-    }
+    if (!carSlug) return;
+    router.push(`/cars/${carSlug}`);
   }
 
   const selectClass =
@@ -70,7 +66,7 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
               onChange={(e) => {
                 setMake(e.target.value);
                 setModel("");
-                setYear("");
+                setCarSlug("");
                 setError("");
               }}
               className={selectClass}
@@ -87,7 +83,7 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
               disabled={!make}
               onChange={(e) => {
                 setModel(e.target.value);
-                setYear("");
+                setCarSlug("");
                 setError("");
               }}
               className={selectClass}
@@ -98,26 +94,28 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
               ))}
             </select>
 
-            {/* Year */}
+            {/* Body / Generation */}
             <select
-              value={year}
+              value={carSlug}
               disabled={!model}
               onChange={(e) => {
-                setYear(e.target.value ? Number(e.target.value) : "");
+                setCarSlug(e.target.value);
                 setError("");
               }}
               className={selectClass}
             >
-              <option value="">Год</option>
-              {years.map((y) => (
-                <option key={y} value={y}>{y}</option>
+              <option value="">Кузов</option>
+              {bodyOptions.map((car) => (
+                <option key={car.slug} value={car.slug}>
+                  {formatBodyLabel(car)}
+                </option>
               ))}
             </select>
 
             {/* Search button */}
             <button
               onClick={handleSearch}
-              disabled={!make || !model || !year}
+              disabled={!carSlug}
               className="font-ui bg-accent text-black font-semibold text-sm px-6 py-2.5 uppercase tracking-wide hover:bg-accent-hover transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
             >
               Найти
