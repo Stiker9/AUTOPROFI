@@ -37,16 +37,8 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
     return getModelsByMake(foundMake).find((m) => matchSlug(m, initialModel)) ?? "";
   });
 
-  const [carSlug, setCarSlug] = useState("");
-  const [error, setError] = useState("");
-
   const models = make ? getModelsByMake(make) : [];
   const bodyOptions = make && model ? getBodyOptionsByMakeModel(make, model) : [];
-
-  function handleSearch() {
-    if (!carSlug) return;
-    router.push(`/cars/${carSlug}`);
-  }
 
   const selectClass =
     "font-ui bg-bg-tertiary border border-border text-white text-sm px-3 py-2.5 focus:outline-none focus:border-accent transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-full";
@@ -54,20 +46,18 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
   return (
     <div className="bg-bg-secondary border-b border-border">
       <div className="w-full px-6 lg:px-12 py-3">
+        {/* Марка + Модель */}
         <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
           <p className="font-ui text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0 sm:mr-2">
             Подобрать по авто:
           </p>
 
           <div className="flex flex-col sm:flex-row gap-2 flex-1 w-full">
-            {/* Make */}
             <select
               value={make}
               onChange={(e) => {
                 setMake(e.target.value);
                 setModel("");
-                setCarSlug("");
-                setError("");
               }}
               className={selectClass}
             >
@@ -77,15 +67,10 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
               ))}
             </select>
 
-            {/* Model */}
             <select
               value={model}
               disabled={!make}
-              onChange={(e) => {
-                setModel(e.target.value);
-                setCarSlug("");
-                setError("");
-              }}
+              onChange={(e) => setModel(e.target.value)}
               className={selectClass}
             >
               <option value="">Модель</option>
@@ -93,38 +78,25 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
                 <option key={m} value={m}>{m}</option>
               ))}
             </select>
-
-            {/* Body / Generation */}
-            <select
-              value={carSlug}
-              disabled={!model}
-              onChange={(e) => {
-                setCarSlug(e.target.value);
-                setError("");
-              }}
-              className={selectClass}
-            >
-              <option value="">Кузов</option>
-              {bodyOptions.map((car) => (
-                <option key={car.slug} value={car.slug}>
-                  {formatBodyLabel(car)}
-                </option>
-              ))}
-            </select>
-
-            {/* Search button */}
-            <button
-              onClick={handleSearch}
-              disabled={!carSlug}
-              className="font-ui bg-accent text-black font-semibold text-sm px-6 py-2.5 uppercase tracking-wide hover:bg-accent-hover transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
-            >
-              Найти
-            </button>
           </div>
         </div>
 
-        {error && (
-          <p className="font-ui text-xs text-red-400 mt-1.5">{error}</p>
+        {/* Кузова — чипы */}
+        {bodyOptions.length > 0 && (
+          <div className="mt-3 pt-3 border-t border-border flex flex-wrap gap-2 items-center">
+            <span className="font-ui text-xs text-text-dim uppercase tracking-wider shrink-0">
+              Кузов:
+            </span>
+            {bodyOptions.map((car) => (
+              <button
+                key={car.slug}
+                onClick={() => router.push(`/cars/${car.slug}`)}
+                className="font-ui text-sm text-white border border-border px-4 py-1.5 hover:border-white hover:bg-bg-tertiary transition-colors cursor-pointer"
+              >
+                {formatBodyLabel(car)}
+              </button>
+            ))}
+          </div>
         )}
       </div>
     </div>
