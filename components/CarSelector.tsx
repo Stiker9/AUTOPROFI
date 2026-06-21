@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { getMakes, getModelsByMake, getBodyOptionsByMakeModel } from "@/lib/data";
 import type { Car } from "@/types";
+
+const BRAND_LOGOS: Record<string, string> = {
+  BMW: "/images/brands/bmw.svg",
+};
 
 function formatBodyLabel(car: Car): string {
   const yearTo = car.yearTo ?? "н.в.";
@@ -55,19 +60,32 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
 
           <div className="flex flex-wrap gap-2 items-center">
             {/* Марка */}
-            <select
-              value={make}
-              onChange={(e) => {
-                setMake(e.target.value);
-                setModel("");
-              }}
-              className="font-ui bg-bg-tertiary border border-border text-white text-sm px-3 py-2 focus:outline-none focus:border-accent transition-colors cursor-pointer"
-            >
-              <option value="">Марка</option>
-              {makes.map((m) => (
-                <option key={m} value={m}>{m}</option>
-              ))}
-            </select>
+            <div className="flex items-center gap-2">
+              {make && BRAND_LOGOS[make] && (
+                <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-border">
+                  <Image
+                    src={BRAND_LOGOS[make]}
+                    alt={make}
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+              <select
+                value={make}
+                onChange={(e) => {
+                  setMake(e.target.value);
+                  setModel("");
+                }}
+                className="font-ui bg-bg-tertiary border border-border text-white text-sm px-3 py-2 focus:outline-none focus:border-accent transition-colors cursor-pointer"
+              >
+                <option value="">Марка</option>
+                {makes.map((m) => (
+                  <option key={m} value={m}>{m}</option>
+                ))}
+              </select>
+            </div>
 
             {/* Выбранная модель — кнопка-крошка, клик сбрасывает */}
             {model && (
