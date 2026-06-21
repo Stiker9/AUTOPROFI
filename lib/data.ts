@@ -18,18 +18,24 @@ export function getCarBySlug(slug: string): Car | undefined {
   return cars.find((c) => c.slug === slug);
 }
 
+// 60 записей в данных хранят имя модели в поле generation вместо model.
+// Эта функция нормализует: возвращает model, а при пустом model — generation.
+function effectiveModel(car: Car): string {
+  return car.model || car.generation || "";
+}
+
 export function getMakes(): string[] {
   return [...new Set(cars.map((c) => c.brand))].sort();
 }
 
 export function getModelsByMake(brand: string): string[] {
   return [...new Set(
-    cars.filter((c) => c.brand === brand).map((c) => c.model)
+    cars.filter((c) => c.brand === brand).map(effectiveModel).filter(Boolean)
   )].sort();
 }
 
 export function getYearsByMakeModel(brand: string, model: string): number[] {
-  const matched = cars.filter((c) => c.brand === brand && c.model === model);
+  const matched = cars.filter((c) => c.brand === brand && effectiveModel(c) === model);
   const years = new Set<number>();
   const currentYear = new Date().getFullYear();
   matched.forEach((c) => {
@@ -49,13 +55,13 @@ export function getGenerationByMakeModelYear(
   const currentYear = new Date().getFullYear();
   return cars.find((c) => {
     const end = c.yearTo ?? currentYear;
-    return c.brand === brand && c.model === model &&
+    return c.brand === brand && effectiveModel(c) === model &&
            year >= c.yearFrom && year <= end;
   });
 }
 
 export function getBodyOptionsByMakeModel(brand: string, model: string): Car[] {
-  return cars.filter((c) => c.brand === brand && c.model === model);
+  return cars.filter((c) => c.brand === brand && effectiveModel(c) === model);
 }
 
 export function getPopularCars(limit = 10): Car[] {
