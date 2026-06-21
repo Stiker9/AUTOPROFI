@@ -45,62 +45,73 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
   const models = make ? getModelsByMake(make) : [];
   const bodyOptions = make && model ? getBodyOptionsByMakeModel(make, model) : [];
 
-  const showModels = !!make && !model && models.length > 0;
+  const showMakes = !make;
+  const showModels = !!make && !model;
   const showBodies = !!model && bodyOptions.length > 0;
+
+  const chipBase =
+    "font-ui text-sm text-left border border-border px-3 py-1.5 hover:border-white hover:bg-bg-tertiary transition-colors cursor-pointer";
 
   return (
     <div className="bg-bg-secondary border-b border-border">
       <div className="w-full px-6 lg:px-12 py-3">
 
-        {/* Строка: метка + Марка + выбранная Модель */}
-        <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
-          <p className="font-ui text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0 sm:mr-2">
+        {/* Метка + хлебные крошки */}
+        <div className="flex flex-wrap gap-2 items-center">
+          <p className="font-ui text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0 mr-2">
             Подобрать по авто:
           </p>
 
-          <div className="flex flex-wrap gap-2 items-center">
-            {/* Марка */}
-            <div className="flex items-center gap-2">
-              {make && BRAND_LOGOS[make] && (
-                <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-border">
-                  <Image
-                    src={BRAND_LOGOS[make]}
-                    alt={make}
-                    width={32}
-                    height={32}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+          {/* Выбранная марка */}
+          {make && (
+            <button
+              onClick={() => { setMake(""); setModel(""); }}
+              className="flex items-center gap-1.5 font-ui text-sm text-white border border-accent px-3 py-1.5 hover:bg-bg-tertiary transition-colors cursor-pointer"
+            >
+              {BRAND_LOGOS[make] && (
+                <Image src={BRAND_LOGOS[make]} alt={make} width={16} height={16} className="rounded-full" />
               )}
-              <select
-                value={make}
-                onChange={(e) => {
-                  setMake(e.target.value);
-                  setModel("");
-                }}
-                className="font-ui bg-bg-tertiary border border-border text-white text-sm px-3 py-2 focus:outline-none focus:border-accent transition-colors cursor-pointer"
-              >
-                <option value="">Марка</option>
-                {makes.map((m) => (
-                  <option key={m} value={m}>{m}</option>
-                ))}
-              </select>
-            </div>
+              {make}
+              <span className="text-text-dim ml-0.5">✕</span>
+            </button>
+          )}
 
-            {/* Выбранная модель — кнопка-крошка, клик сбрасывает */}
-            {model && (
-              <>
-                <span className="text-text-dim text-sm">›</span>
-                <button
-                  onClick={() => setModel("")}
-                  className="font-ui text-sm text-white border border-accent px-3 py-2 hover:bg-bg-tertiary transition-colors cursor-pointer"
-                >
-                  {model} ✕
-                </button>
-              </>
-            )}
-          </div>
+          {/* Выбранная модель */}
+          {model && (
+            <>
+              <span className="text-text-dim text-sm">›</span>
+              <button
+                onClick={() => setModel("")}
+                className="font-ui text-sm text-white border border-border px-3 py-1.5 hover:bg-bg-tertiary transition-colors cursor-pointer"
+              >
+                {model} <span className="text-text-dim">✕</span>
+              </button>
+            </>
+          )}
         </div>
+
+        {/* Грид марок */}
+        {showMakes && (
+          <div className="mt-3 pt-3 border-t border-border">
+            <span className="font-ui text-xs text-text-dim uppercase tracking-wider block mb-2">
+              Марка:
+            </span>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-x-4 gap-y-1.5">
+              {makes.map((m) => (
+                <button
+                  key={m}
+                  onClick={() => setMake(m)}
+                  className="flex items-center gap-1.5 font-ui text-sm text-white text-left hover:text-accent transition-colors cursor-pointer truncate"
+                >
+                  {BRAND_LOGOS[m] && (
+                    <Image src={BRAND_LOGOS[m]} alt={m} width={16} height={16} className="rounded-full shrink-0" />
+                  )}
+                  <span className="truncate">{m}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Грид моделей */}
         {showModels && (
@@ -132,7 +143,7 @@ export function CarSelector({ initialMake, initialModel }: CarSelectorProps) {
               <button
                 key={car.slug}
                 onClick={() => router.push(`/cars/${car.slug}`)}
-                className="font-ui text-sm text-white border border-border px-4 py-1.5 hover:border-white hover:bg-bg-tertiary transition-colors cursor-pointer"
+                className={`${chipBase} text-white`}
               >
                 {formatBodyLabel(car)}
               </button>
