@@ -45,8 +45,14 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
             {product.towLoad !== null && (
               <div className="flex justify-between gap-2">
-                <span className="text-text-muted">Нагрузка</span>
+                <span className="text-text-muted">Тяговая нагрузка</span>
                 <span className="text-white">{product.towLoad} кг</span>
+              </div>
+            )}
+            {product.vertLoad !== null && (
+              <div className="flex justify-between gap-2">
+                <span className="text-text-muted">Нагрузка на шар</span>
+                <span className="text-white">{product.vertLoad} кг</span>
               </div>
             )}
             {product.bumperCut !== null && product.bumperCut !== "нет" && (

@@ -58,11 +58,11 @@ export default async function ProductPage({
         { label: "Бренд", value: product.brand },
         { label: "Тип крюка", value: product.hookType || null },
         {
-          label: "Макс. нагрузка на шар",
+          label: "Тяговая нагрузка",
           value: product.towLoad !== null ? `${product.towLoad} кг` : null,
         },
         {
-          label: "Верт. нагрузка",
+          label: "Нагрузка на шар",
           value: product.vertLoad !== null ? `${product.vertLoad} кг` : null,
         },
         { label: "Вырез в бампере", value: product.bumperCut },
